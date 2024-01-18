@@ -21,6 +21,20 @@ $(document).ready(function() {
 	   arrows: true,
 	});
 
+	$('.top-slider').slick({
+		autoplay: false,
+  	 autoplaySpeed: 5000,
+	 	dots: true,
+	   infinite: false,
+	   arrows: true,
+	   slidesToShow: 1,
+	   arrows: true,
+	   fade: true,
+	   speed: 900,
+	   cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+	   touchThreshold: 100
+	});
+
 
 	
 	$('.featured-book-slide').slick({
