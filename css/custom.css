@@ -1271,6 +1271,21 @@ li.slick-active {
 .form .row {
   gap: 20px 0px;
 }
+.faq-wrapper h4 {
+  font-weight: 700;
+  margin-bottom:10px;
+}
+.faq-wrapper {
+  padding: 40px;
+  background: #fff;
+  margin-top: -80px;
+  border-radius: 21px;
+}
+.faq-wrapper ul {
+  display: flex;
+  flex-direction: column;
+  gap: 40px 0px;
+}
 /*=================================== media query css ===================================*/
 
 
