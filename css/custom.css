@@ -290,30 +290,30 @@ label.btn.btn-default:focus {
   border-color: #151515;
 }
 
-::-webkit-input-placeholder {
+::-webkit-input-placeholder, textarea::placeholder  {
   /* Edge */
   font-family: 'Lora', serif;
   text-transform: capitalize;
-  color: #767a79;
+  color: #222;
   font-size: 12px;
   font-weight: 500;
 }
 
-:-ms-input-placeholder {
+:-ms-input-placeholder, textarea::placeholder {
   /* Internet Explorer 10-11 */
   font-family: 'Lora', serif;
   text-transform: capitalize;
-  color: #767a79;
+  color: #222;
   text-transform: initial;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
 }
 
-::placeholder {
+::placeholder, textarea::placeholder {
   font-family: 'Lora', serif;
   text-transform: capitalize;
-  color: #767a79;
-  font-size: 12px;
+  color: #222;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -440,6 +440,7 @@ a.find-store {
   display: flex;
   align-items: center;
   border-radius: 100%;
+  justify-content: center;
 }
 
 .menu-contact {
@@ -565,10 +566,6 @@ span.price-num {
   padding: 50px 50px !important;
 }
 
-.banner-slider {
-  margin-top: -250px;
-}
-
 .rate img {
   width: 100px;
 }
@@ -588,7 +585,7 @@ span.price-num {
 }
 
 .section-heading {
-  gap: 20px
+  gap: 20px;
 }
 
 .author-im-wrapper {
@@ -611,11 +608,11 @@ span.price-num {
   border-radius: 100%;
 }
 
-.popular-authors {
+/* .popular-authors {
   padding: 80px 0px 150px;
   margin-top: 0px;
   background-size: cover;
-}
+} */
 
 .autor-block {
   gap: 20px;
@@ -627,10 +624,21 @@ span.price-num {
 }
 
 .authors .slick-list {
-  padding: 0px 38px !important;
-  overflow: unset;
+  padding: 0px 20px !important;
 }
-
+.authors .slick-slider{
+  margin: 0 !important;
+}
+.popular-authors {
+  background: url(https://wpbingosite.com/wordpress/oriobook/wp-content/uploads/2023/07/back-3.jpg);
+  padding: 30px;
+  border-radius: 30px;
+  margin-bottom: 0;
+  position: relative;
+  bottom: 56px;
+  margin: 0px 50px;
+  background-size: contain;
+}
 .featured-book-section .slick-list {
   padding: 0px 0px !important;
   overflow: unset;
@@ -1016,7 +1024,7 @@ li.slick-active {
   background: url(https://wpbingosite.com/wordpress/oriobook/wp-content/uploads/2023/08/bg-breadcrumb.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  padding: 150px 0 150px;
+  padding: 100px 0 100px;
 }
 
 .section-breadcrumb h1 {
@@ -1166,7 +1174,8 @@ li.slick-active {
 
 .section-banner-slide .slick-dots {
   position: absolute;
-  bottom: 30px;
+  bottom: 80px;
+  z-index: 9999 ;
 }
 
 .section-banner-slide ul.slick-dots li {
@@ -1191,7 +1200,77 @@ li.slick-active {
   justify-content: center;
   align-items: center;
 }
-
+.category-layout-1 {
+  padding: 60px;
+  background: #f1ede2;
+}
+.category-layout-im-wrapper{
+  height: 300px;
+}
+.category-layout-1.two {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: end;
+  padding:30px;
+}
+.category-layout-1.two .category-layout-im-wrapper {
+  height: 165px;
+  width: 116px;
+}
+.category-layout-1.two .category-layout-im-wrapper img, .category-layout-1 img{
+  object-fit: cover;
+  border-radius: 10px;
+}
+.row.category-inner-grid {
+  gap: 16px 0px;
+}
+.book-listing-item {
+  padding: 20px;
+  background: #fff;
+  border-radius: 6px;
+  border: 5px solid #e1e1e11a;
+  box-shadow: 0px 7px 24px 0px rgba(17, 12, 46, 0.15);
+}
+.book-listing-item .book-im-wrapper {
+  height: 250px;
+  object-fit: cover;
+}
+.book-listing .row{
+  gap:40px 0px
+}
+.contact-pg-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contact-pg-left {
+  background: url(https://wpbingosite.com/wordpress/oriobook/wp-content/uploads/2023/07/back-3.jpg);
+  padding: 60px;
+  background-size: cover;
+  border-radius: 21px;
+  margin-top: -80px;
+}
+.contact-form {
+  padding: 30px;
+  background: #fff;
+  border-radius: 6px;
+  border: 5px solid #e1e1e11a;
+  box-shadow: 0px 7px 24px 0px rgba(17, 12, 46, 0.15);
+}
+.contact-form input {
+  border: 1px solid #e1e1e1;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;
+  font-size: 14px;
+  width: 100%;
+}
+.form .row {
+  gap: 20px 0px;
+}
 /*=================================== media query css ===================================*/
 
 

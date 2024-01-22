@@ -17,7 +17,7 @@ $(document).ready(function() {
 	   infinite: false,
 	   arrows: false,
 	   speed: 800,
-	   slidesToShow: 3.1,
+	   slidesToShow: 3,
 	   arrows: true,
 	});
 
