@@ -28,10 +28,13 @@ html {
   background-color: #f5f7fe;
 }
 
-.text-marun {
+.text-marun, .details span {
   color: #d54e4e
 }
-
+.details span{
+  font-weight: 500;
+  font-size: 14px;
+}
 body {
  font-family: 'Jost', sans-serif;
   touch-action: manipulation;
@@ -149,6 +152,9 @@ h2.banner-bg-text {
 }
 .cart-flex,.author-ach, .author-social, .author-social-group{
   gap:20px
+}
+.event-listing .row{
+  gap:50px 0px
 }
 .author-social i:before{
   font-size: 16px;
@@ -980,11 +986,12 @@ li.slick-active {
 
 .footer-widget-title {
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   text-transform: capitalize;
   line-height: 20px;
-  margin-top: 25px
+  margin-top: 25px;
+  margin-bottom: 30px;
 }
 
 .phone {
@@ -1072,7 +1079,13 @@ li.slick-active {
 .section-ab-fearures {
   margin-top: -82px;
 }
-
+.event-top-timing {
+  margin-top: -50px;
+}
+.event-top-timing{
+  position: relative;
+  z-index:99;
+}
 .featured-im-wrapper img {
   width: 100%;
   height: 100%;
@@ -1562,6 +1575,136 @@ p.author-card-text {
 }
 .author-related-books .slick-list.draggable {
   overflow: hidden;
+}
+.footer-email a {
+  text-transform: lowercase;
+}
+.event-col {
+  height: 500px;
+  overflow: hidden;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+.event-col-im-wrapper, .event-col-im-wrapper img {
+  height: 100%;
+  object-fit: cover;
+}
+.event-col-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.event-col-top-content {
+  background-color: #e8e6b5;
+  padding: 20px 0px;
+  gap: 20px;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  transform: translateX(-0%);
+}
+.event-col-entry-title {
+  background-image: url(https://www.divinepaths.org/images/pattern-grudge.png);
+  padding: 30px;
+  background-color: #fff;
+  position: relative;
+}
+.event-date {
+  background-image: linear-gradient(#82b440, #4c6e1e);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: url(https://www.divinepaths.org/images/pattern-grudge.png);
+  background-color: #fff;
+}
+.event-col:hover .event-col-top-content {
+  transform: translateX(-150%);
+}
+.event-col-entry-title:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: #f4fbf2;
+  height: 100%;
+  top: 0;
+  background-image: url(../images/pattern-grudge.png);
+  left: 0;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  transform: translateX(-150%);
+}
+.event-col:hover .event-col-entry-title:after {
+  transform: translateX(-0%);
+}
+.event-col-entry-title h3 {
+  z-index: 9;
+  font-size: 20px;
+  position: relative;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  transform: translateX(0%);
+}
+.event-col:hover .event-col-entry-title h3 {
+  -webkit-transform: translateX(13%);
+  -moz-transform: translateX(13%);
+  -ms-transform: translateX(13%);
+  -o-transform: translateX(13%);
+  transform: translateX(13%);
+}
+.event-date-v2 {
+  font-size: 18px;
+  font-family: 'Lora', serif;
+  font-weight: 600;
+}
+a.event-col {
+  border: 1px solid #e6e6e6;
+}
+.event-top-content{
+  position: relative;
+  z-index:99;
+}
+.event-top-banner:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000b8;
+  top: 0;
+  left: 0;
+}
+.event-top-timing-block h4{
+  font-family: 'Lora', serif;
+}
+.event-top-timing-block h6{
+  font-family: 'Jost', sans-serif;
+  letter-spacing:1px;
+  font-size: 20px;
+}
+.event-top-timing {
+  background-image: url(https://wpbingosite.com/wordpress/oriobook/wp-content/uploads/2023/07/back-3.jpg);
+  background-size: cover;
+  padding: 60px 0px;
+  border-radius: 24px;
+}
+.event-top-banner {
+  padding: 150px 0px;
 }
 /*=================================== media query css ===================================*/
 
