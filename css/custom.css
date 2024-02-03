@@ -12,7 +12,9 @@ html {
 .bg-pink {
   background-color: #fef5f5;
 }
-
+.font-16{
+  font-size:16px;
+}
 .font-lora,
 .cta-text h6 {
   font-family: 'Lora', serif !important;
@@ -27,7 +29,7 @@ html {
 }
 
 .text-marun {
-  color: #c80406
+  color: #d54e4e
 }
 
 body {
@@ -145,7 +147,16 @@ h2.banner-bg-text {
   position: relative;
   z-index: 99;
 }
-
+.cart-flex,.author-ach, .author-social, .author-social-group{
+  gap:20px
+}
+.author-social i:before{
+  font-size: 16px;
+}
+.author-detail-footer p{
+  letter-spacing:1px;
+  color:#000;
+}
 /* .section_breadcrumbs h1:hover{
   color: transparent;
   transition: color .3s,-webkit-text-stroke .3s;
@@ -355,7 +366,7 @@ form.search-bar button {
   border: 0;
   display: flex;
   align-items: center;
-  background-color: #c80406;
+  background-color: #d54e4e;
   padding: 15px;
   border-radius: 30px;
 }
@@ -487,7 +498,7 @@ div#dashboard-page {
 
 .banner-content a,
 .btn-view {
-  background: #c80406;
+  background: #d54e4e;
   padding: 10px 40px;
   width: fit-content;
   font-size: 15px;
@@ -507,6 +518,7 @@ div#dashboard-page {
   position: fixed;
   top: 0;
   z-index: -1;
+  width: 100%;
 }
 
 .loop-marquee_item-top {
@@ -705,13 +717,13 @@ span.price-num {
   height: 220px;
 }
 
-.featured-block-content h5 {
+.featured-block-content h5, .sku_wrapper span, .sku_wrapper label {
   font-size: 16px;
   margin-bottom: 0;
 }
 
 .featured-block-content .category {
-  color: #c80406;
+  color: #d54e4e;
   font-size: 12px;
   margin: 5px 0px;
 }
@@ -812,7 +824,7 @@ h3.testimonial-title:after {
   position: absolute;
   width: 80px;
   height: 1px;
-  background-color: #c80406;
+  background-color: #d54e4e;
   margin: 0 auto;
   bottom: 0;
   left: 0;
@@ -926,6 +938,8 @@ li.slick-active {
 
 .custom-footer {
   background-color: #242424;
+  position: relative;
+  z-index: 999;
 }
 
 .counter-detail h4 {
@@ -1094,7 +1108,7 @@ li.slick-active {
 }
 
 .about-content .span-line {
-  background: #c80406;
+  background: #d54e4e;
 }
 
 .about-content .banner-review-top {
@@ -1179,7 +1193,7 @@ li.slick-active {
 }
 
 .section-banner-slide ul.slick-dots li {
-  background: #c80406;
+  background: #d54e4e;
 }
 
 .cta-section {
@@ -1187,7 +1201,15 @@ li.slick-active {
   background-size: cover;
 
 }
-
+.author-pg-publish h2 {
+  font-size: 100px;
+}
+.author-pg-quote-block{
+  position: relative;
+  margin-left: 129px;
+  padding-left: 150px;
+  background-color: #eae9e4;
+}
 .cta-section h6 {
   font-size: 40px;
   line-height: 110%;
@@ -1285,6 +1307,261 @@ li.slick-active {
   display: flex;
   flex-direction: column;
   gap: 40px 0px;
+}
+.book-detail-pg h4{
+ font-size:45px;
+  font-weight:600;
+  font-family: 'Lora', serif;
+}
+.blog-fetail-author-detail, .book-detail-top {
+  padding-bottom: 35px;
+  border-bottom: 1px solid #ededed;
+}
+.product_meta  {
+  padding-top: 40px;
+}
+.blog-pg-pr-detail p{
+  margin-bottom:20px !important;
+}
+.author-bg{
+  height: 100px;
+  width:100px;
+  
+}
+.author-bg img{
+  border-radius:100%;
+  object-fit:cover;
+  object-position:center;
+}
+.author-name {
+  font-size: 16px;
+}
+.book-detail-price{
+  font-size:25px;
+}
+.qty-input {
+  color: #000;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.qty-input .product-qty,
+.qty-input .qty-count {
+  background: transparent;
+  color: inherit;
+  font-weight: bold;
+  font-size: inherit;
+  border: none;
+  display: inline-block;
+  min-width: 0;
+  height: 2.5rem;
+  line-height: 1;
+}
+.qty-input .product-qty:focus,
+.qty-input .qty-count:focus {
+  outline: none;
+}
+.qty-input .product-qty {
+  width: 50px;
+  min-width: 0;
+  display: inline-block;
+  text-align: center;
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+.qty-input .product-qty::-webkit-outer-spin-button, .qty-input .product-qty::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
+}
+.qty-input .qty-count {
+  padding: 0;
+  cursor: pointer;
+  width: 2.5rem;
+  font-size: 1.25em;
+  text-indent: -100px;
+  overflow: hidden;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: #c4c4c461 !important;
+  color: #fff;
+  border-radius: 100%;
+  -webkit-transition: all .3s;
+  transition: all .3s;  
+}
+.qty-input .qty-count:before, .qty-input .qty-count:after {
+  content: "";
+  height: 3px;
+  width: 16px;
+  position: absolute;
+  display: block;
+  background: #000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.qty-input .qty-count--minus {
+  border-right: 1px solid #e2e2e2;
+}
+.qty-input .qty-count--add {
+  border-left: 1px solid #e2e2e2;
+}
+.qty-input .qty-count--add:after {
+  transform: rotate(90deg);
+}
+.qty-input .qty-count:disabled {
+  color: #ccc;
+  background: #f2f2f2;
+  cursor: not-allowed;
+  border-color: transparent;
+}
+.qty-input .qty-count:disabled:before, .qty-input .qty-count:disabled:after {
+  background: #ccc;
+}
+
+
+.qty-input {
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #ededed;
+  padding: 10px 20px;
+  height: 47px;
+}
+.book-detail-im-wrapper {
+  height: 350px;
+}
+.book-author-im-wrapper img{
+  object-fit: cover;
+}
+.book-author-im-wrapper:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #dbd7c9;
+  top: 60px;
+  left: -60px;
+  z-index: -1;
+}
+.author-quote h5 {
+  font-weight: 600;
+  font-style: italic;
+}
+.book-detail-im-wrapper img {
+  object-fit: cover;
+  object-position: top;
+}
+.related-book-slide .featured-book-block {
+  border: 1px solid #e1e1e1a8;
+  padding: 20px;
+}
+.author-banner-bg-right{
+  background-image: url(../images/author/author-page.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+    background-position: top right;
+}
+.author-sub-heading{
+font-size:20px;
+}
+.author-pg-publish {
+  border: 20px solid #d54e4e;
+  padding: 75px 0;
+  background: #fff;
+  background-image: url(https://authore.g5plus.net/wp-content/uploads/2023/08/Image.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 280px;
+}
+.author-pg-quote {
+  padding-left: 54px;
+  padding-right: 54px;
+}
+.author-pg-quote p{
+  font-size: 32px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.22em;
+  font-family: 'Lora', serif;
+}
+p.author-card-text {
+  font-size: 18px;
+  font-weight: 600;
+}
+.author-top-banner-detail h1{
+  font-size: 75px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.author-top-banner-detail p {
+  font-size: 18px;
+}
+.author-top-banner-detail .author-social {
+  background: #f4fbf2;
+  width: 410px;
+  height: 60px;
+  padding-left: 30px;
+  border-radius: 30px;
+}
+.author-top-banner-detail .author-social p {
+  font-size: 14px;
+}
+.author-top-banner-detail   .author-social-group i {
+  background: #d54e4e;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.author-social-group i:before{
+  color: #fff;
+}
+.author-abt-counter-content h6{
+  font-size: 48px;
+  font-weight: 700;
+  font-family: 'Lora', serif;
+  color: #d54e4e;
+  letter-spacing: -.48px;
+}
+.author-abt-counter-content p{
+  font-size: 12px;
+    font-weight: 500;
+    color:#2c2c2c;
+    letter-spacing: 3.12px;
+    text-transform: uppercase;
+}
+.author-abt-im-wrapper{
+  background-image:url(https://authore.g5plus.net/wp-content/uploads/2023/08/underlay-01.png);
+  background-repeat: no-repeat;
+  background-position:center;
+}
+.author-related-books {
+  background-image: url(https://wpbingosite.com/wordpress/oriobook/wp-content/uploads/2023/07/back-2.jpg);
+  background-size: cover;
+  padding: 40px;
+  background-position: bottom right;
+}
+.author-related-books .featured-book-block{
+  padding: 20px;
+  border-radius: 15px;
+  gap: 20px;
+  background: #fff;
+}
+.author-related-books .slick-list.draggable {
+  overflow: hidden;
 }
 /*=================================== media query css ===================================*/
 
