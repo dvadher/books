@@ -2233,10 +2233,161 @@ table th {
     color: #151515;
 }
 
+
+
+
+.auth-row {
+  height: 100vh;
+}
+.auth-im-wrapper {
+  background-image: url(../images/banner-4.png);
+  background-size: cover;
+  background-position: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.auth-left-content h3{
+  font-family: 'Lora', serif !important;
+  font-weight: 600;
+  font-size:30px;
+}
+.auth-logo{
+  position: absolute;
+  left: 30px;
+  top:30px;
+  width: 220px;
+  z-index:99;
+}
+.auth-form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.toggle-password {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #c60304;
+  font-size: 14px;
+}
+.contact-form.auth-form {
+  box-shadow: none !important;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.auth-form input{
+  width:100%;
+  border-radius: 10px;
+  height: 50px;
+  border-color: #eee;
+}
+.check-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 150%;
+}
+
+/* Hide the browser's default checkbox */
+.check-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border:1px solid #eee;
+  border-radius:6px
+}
+
+/* On mouse-over, add a grey background color */
+
+/* When the checkbox is checked, add a blue background */
+.check-container input:checked ~ .checkmark {
+  background-color: #d54e4e;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.check-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.check-container .checkmark:after {
+  left: 8px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.font-bold{
+  font-weight:700;
+}
+.auth-row .btn-view {
+  padding: 15px 40px !important;
+}
+.signup-footer h6 {
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 17px;
+}
+.signup-footer a{
+  padding-bottom: 10px;
+}
+.testimonial-auth-icon{
+  filter: invert(1);
+    opacity: 0.1;
+}
 /*=================================== media query css ===================================*/
 
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
+  .contact-form.auth-form {
+    width: 100% !important;
+    padding: 0px 20px;
+}
+  .auth-logo{
+    left: 20px;
+    top:20px;
+    width: 120px;
+    z-index:99;
+  }
+  .auth-im-wrapper {
+    order: 2;
+}
 
   button.navbar-toggler.collapsed i:before {
     content: "\f0c9";
@@ -2282,6 +2433,19 @@ table th {
 
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact-form.auth-form {
+    width: 100% !important;
+    padding: 0px 20px;
+  }
+  
 
-@media only screen and (min-width: 991px) and (max-width: 1024px) {}
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1024px) {
+  .contact-form.auth-form {
+    width: 100% !important;
+    padding: 0px 20px;
+  }
+
+}
