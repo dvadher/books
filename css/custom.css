@@ -1839,6 +1839,104 @@ a.tag-item {
 .blog-detail-content p{
   margin-bottom: 20px;
 }
+
+/* Course animation */
+.overlay {
+  -webkit-transition: all 0.35s ease 0s;
+  -moz-transition: all 0.35s ease 0s;
+  -ms-transition: all 0.35s ease 0s;
+  -o-transition: all 0.35s ease 0s;
+  transition: all 0.35s ease 0s;
+  content: "";
+  display: block;
+  height: 0;
+  position: absolute;
+  left: 0;
+  top: -100%;
+  visibility: hidden;
+  width: 100%;
+  backface-visibility: hidden;
+  background-color: rgba(126, 132, 70, 0.9);
+}
+.overlay a {
+  background-color: #eaa451;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 15px 40px;
+  letter-spacing: 1px;
+  position: relative;
+}
+.entry-details {
+  min-height: 120px;
+  padding: 20px 15px 25px 120px;
+  position: relative;
+  background-image: url(../images/pattern-grudge.png);
+  background-color: #ffffff;
+  z-index: 9;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.courses-price {
+  background-color: #e5dbc1;
+  -webkit-transition: all 0.9s ease 0s;
+  -moz-transition: all 0.9s ease 0s;
+  -ms-transition: all 0.9s ease 0s;
+  -o-transition: all 0.9s ease 0s;
+  transition: all 0.9s ease 0s;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 10px 14px 12px;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: url('https://www.divinepaths.org/images/pattern-grudge.png');
+}
+
+.blog-entry:hover:before {
+  transform: scale(0);
+}
+.blog-entry:hover:after {
+  width: 94%;
+  height: 94%;
+}
+.blog-entry {
+  overflow: hidden;
+  top: -44px;
+}
+.blog-entry:hover .overlay {
+  height: 100%;
+  top: 0;
+  visibility: visible;
+}
+.entry-details:before {
+  background-color: #ffda6b;
+  -webkit-transition: all 0.75s ease 0s;
+  -moz-transition: all 0.75s ease 0s;
+  -ms-transition: all 0.75s ease 0s;
+  -o-transition: all 0.75s ease 0s;
+  transition: all 0.75s ease 0s;
+  content: "";
+  height: 0;
+  position: absolute;
+  left: 0;
+  top: -100%;
+  visibility: hidden;
+  width: 100%;
+  z-index: -1;
+}
+.blog-entry:hover .entry-details:before {
+  height: 100%;
+  top: 0;
+  visibility: visible;
+}
 /*=================================== media query css ===================================*/
 
 
