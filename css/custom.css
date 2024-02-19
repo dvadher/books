@@ -2763,10 +2763,27 @@ button.btn-del {
 .start-write-btn-bottom, .mobile-right-menu{
   display:none;
 }
+.trnd-add img {
+  object-fit: cover;
+}
 /*=================================== media query css ===================================*/
 
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
+  .category-layout-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+  .featured-book .book-im-wrapper {
+    height: 100px;
+}
+.featured-block-content{
+  margin-top: 0;
+}
+.books-short-description {
+  margin-bottom: 0;
+}
   .trnd-add {
     height: 200px;
 }
@@ -2774,8 +2791,11 @@ button.btn-del {
   margin-top: 30px;
 }
 .category-layout-im-wrapper {
-  height: 100px;
-  width: 30%;
+  height: 150px;
+  width: 40%;
+}
+.featured-category .category-layout-1 {
+  flex-direction: row !important;
 }
 .category-layout-1 {
   display: flex;
@@ -2788,7 +2808,7 @@ button.btn-del {
   order: 1;
 }
 .category-layout-1.two .category-layout-im-wrapper {
-  height: 150pxpx;
+  height: 150px;
   width: 100%;
 }
   .blog-row {
@@ -2974,6 +2994,8 @@ span.border-line{
     margin: 0px 0px;
     padding: 20px;
     bottom: 30px;
+    overflow: hidden;
+    border-radius: 0;
   }
   .heading-line {
     display: none;
