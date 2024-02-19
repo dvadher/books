@@ -161,6 +161,20 @@ $(document).ready(function() {
 	   speed: 800,
 	   slidesToShow: 4.1,
 	   arrows: true,
+	   responsive: [
+		{
+		  breakpoint: 991,
+		  settings: {
+			slidesToShow: 2.1,
+		  }
+		},
+		{
+		  breakpoint: 767,
+		  settings: {
+			slidesToShow: 1.1,
+		  }
+		}
+	  ]
 	});
 
 	$('.author-book-slide').slick({
@@ -173,6 +187,20 @@ $(document).ready(function() {
 	   speed: 800,
 	   slidesToShow: 4,
 	   arrows: true,
+	   responsive: [
+		{
+		  breakpoint: 991,
+		  settings: {
+			slidesToShow: 2.1,
+		  }
+		},
+		{
+		  breakpoint: 767,
+		  settings: {
+			slidesToShow: 1.1,
+		  }
+		}
+	  ]
 	});
 
 	$('.testimonial-slider').slick({

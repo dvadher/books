@@ -1084,14 +1084,14 @@ li.slick-active {
 }
 
 .section-breadcrumb {
-  background: url(https://wpbingosite.com/wordpress/oriobook/wp-content/uploads/2023/08/bg-breadcrumb.jpg);
-  background-size: 100% 100%;
+  background: url(https://wpbingosite.com/wordpress/oriobook/wp-content/uploads/2023/07/back-2.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 100px 0 100px;
 }
 
 .section-breadcrumb h1 {
-  font-size: 45px;
+  font-size: 40px;
 }
 
 .section-breadcrumb li {
@@ -1825,9 +1825,6 @@ span.border-line {
 .blog-item:hover .g5blog__post-content{
   transform: translate(-50%, -40%);
 }
-.blog-row{
-  margin-top:60px;
-}
 .section-blog{
   margin-bottom: 100px;
 }
@@ -1881,6 +1878,7 @@ a.tag-item {
 }
 .blog-detail-im-wrapper img{
   border-radius: 30px;
+  object-fit: cover;
 }
 .blog-detail-content p{
   margin-bottom: 20px;
@@ -2772,10 +2770,222 @@ button.btn-del {
 .trnd-add img {
   object-fit: cover;
 }
+.blog-detail-breadcrumb{
+  padding:0;
+  background:none;
+}
+.blod-author {
+  width: 40px;
+  height: 40px;
+  background: #fff4e3;
+  border-radius: 100%;
+  border: 2px solid #eaa45136;
+}
+.blod-author img{
+  object-fit: contain;
+}
+.blog-author-detail, .blog-detail-header-right, .author-left{
+  gap:20px 20px;
+}
+.blog-share{
+  gap:10px 10px;
+}
+a.blog-share-item {
+  background: rgba(24,24,21,.1);
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 20.2778px 60.8333px rgba(16,30,54,.1);
+    box-shadow: 0 20.2778px 60.8333px rgba(16,30,54,.1);
+}
+a.blog-share-item i{
+  font-size: 16px;
+}
+a.blog-share-item:hover {
+  background: #d54e4e;
+}
+a.blog-share-item:hover i{
+  color:#fff;
+}
+.blog-detail-sidebar h2 {
+  font-size: 30px;
+}
+.related-listing .trend-block {
+  margin-bottom: 15px;
+}
+.author-sign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.blog-entry.course-detail-entry {
+  position: unset !important;
+}
+.site-block h2 {
+  font-size: 20px;
+}
+a.sitemap-link {
+  background: #e8e6b5;
+  font-size: 16px;
+  padding: 10px;
+  max-width: 200px;
+  font-weight: 500;
+}
+
+
+
 /*=================================== media query css ===================================*/
 
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
+  .sart-writing-popular-features-item h3 {
+    font-size: 16px;
+    line-height: 120%;
+}
+.features-count h4{
+  font-size: 30px;
+}
+.sart-writing-popular-features .row{
+  gap: 10px 0px;
+}
+  .content-container .content-sidebar .content-navigation{
+    position: unset;
+  }
+  .content-container{
+    flex-direction: column;
+  }
+  .content-container .content{
+    padding: 2rem;
+  }
+  section.visible h2[id], section.visible h3[id], section.visible h4[id], section.visible h5[id], section.visible h6[id]{
+    padding: 2rem 4rem;
+  }
+  .event-top-banner {
+    padding: 90px 0px 150px;
+}
+.event-top-timing {
+  margin-top: -15px;
+  padding: 30px;
+}
+.event-top-timing .row {
+  gap: 20px 0px;
+}
+  .section-breadcrumb h1 {
+    font-size: 35px;
+}
+.blog-entry {
+  width: 100% !important;
+}
+  .course-detail-ab .course-detail-im-wrapper {
+    height: 250px;
+    width: 100% !important;
+}
+.section-ab-fearures {
+  margin-top: -26px;
+}
+  .contact-pg-left{
+    margin-top: -30px;
+    padding: 30px;
+  }
+  .contact-pg-left .row {
+    gap: 30px;
+}
+.contact-form{
+  margin-top: 30px;
+}
+.contact-pg-item-content h5 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+  .blog-sidebar {
+    margin-top: 120px;
+}
+  .featured-book-block {
+    display: flex !important;
+}
+  .author-abt-counter-content h6{
+    font-size: 30px;
+  }
+  .catehory-content, .author-about-left {
+    order: 2;
+  }
+  .category-layout-im-wrapper, .author-about-right {
+    order: 1;
+  }
+  .about-content h2 {
+    font-size: 35px;
+}
+.author-about-right {
+  padding-top: 30px;
+}
+.featured-book .slick-list.draggable {
+  overflow: unset;
+}
+  .author-top-banner-detail h1{
+    font-size: 35px;
+  }
+  .author-top-banner-right {
+    height: 500px;
+}
+.author-pg-quote-block{
+  margin-left: 0;
+}
+.author-pg-publish{
+  transform: unset;
+  position: unset;
+  padding: 60px 20px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.author-pg-quote p{
+  font-size: 18px;
+  text-align: center;
+}
+.author-pg-publish h2 {
+  font-size: 50px;
+}
+p.author-card-text{
+  font-size: 14px;
+}
+  .blog-detail-breadcrumb {
+    padding-bottom: 20px;
+}
+.blog-detail-im-wrapper{
+  margin-bottom: 40px;
+}
+.tag-group{
+  gap: 10px;
+}
+.blog-author-detail {
+  flex-direction: column;
+}
+.blog-listing-row .row.blog-row {
+  gap: 100px 0px;
+}
+.blog-listing-row {
+  margin-bottom: 40px;
+}
+  .row.about-grid{
+    background-image: none;
+    padding: 20px;
+    border-radius: 0;
+    text-align: center;
+  }
+  .section-breadcrumb{
+    padding: 40px 0px;
+  }
+  .row.about-grid .banner-content a, .row.about-grid .btn-view{
+    margin: 0 auto;
+  }
+  .about-content .banner-review-top {
+    gap: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+}
   .category-layout-1 {
     display: flex;
     flex-direction: row;
@@ -2807,12 +3017,7 @@ button.btn-del {
   display: flex;
   align-items: center;
 }
-.catehory-content {
-  order: 2;
-}
-.category-layout-im-wrapper {
-  order: 1;
-}
+
 .category-layout-1.two .category-layout-im-wrapper {
   height: 150px;
   width: 100%;
@@ -3236,10 +3441,142 @@ h2{
     margin-top: 20px;
     margin-bottom: 30px;
   }
-
+  .book-detail-pg h4{
+    font-size: 35px;
+  }
+  .book-detail-pg {
+    margin-left: 0 !important;
+}
+.publish-detail-block h6 {
+  font-size: 16px;
+} 
+.publish-detail-block h6 {
+  font-size: 16px;
+}
+.book-detail-grid .col {
+  width: 50%;
+  flex-basis: unset;
+}
+.about-content.author-detail-block {
+  margin-left: 0 !important;
+  margin-top: 100px;
+}
+.book-author-im-wrapper {
+  margin: 0px 20px;
+}
+.book-im-wrapper {
+  height: 110px !important;
+}
+.featured-block-content {
+  width: 80%;
+}
+a.book-listing-item {
+  display: flex !important;
+  gap: 20px;
+}
+.faq-wrapper{
+  margin-top: -20px;
+  padding: 20px;
+}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .sart-writing-popular-features-item h3 {
+    font-size: 16px;
+    line-height: 120%;
+}
+.features-count h4{
+  font-size: 30px;
+}
+  .book-listing .book-im-wrapper {
+    margin-bottom: 20px;
+}
+  .contact-pg-left{
+    padding: 20px;
+  }
+  .contact-pg-item-content h5 {
+    font-size: 18px;
+}
+  .publish-detail-block h6 {
+    font-size: 18px;
+}
+.book-detail-grid {
+  margin-top: 30px !important;
+}
+  .blog-im-wrapper{
+    height: 200px;
+  }
+  .entry-date, ul.g5blog__post-meta a{
+    font-size: 12px;
+  }
+  h3.g5blog__post-title{
+    font-size: 18px;
+  }
+  .featured-book-block {
+    display: flex !important;
+}
+.featured-book .slick-list.draggable {
+  overflow: unset;
+}
+  .author-abt-im-wrapper img {
+    width: 100%;
+}
+  .author-pg-quote p{
+    font-size: 18px;
+  }
+  .author-top-banner-detail h1{
+    font-size: 45px;
+  }
+  .author-abt-counter-content h6{
+    font-size: 30px;
+  }
+  .author-pg-publish{
+    padding: 50px 0;
+    transform: translate(-43%, -50%);
+  }
+  .author-pg-quote-block{
+    position: relative;
+    top: -10px;
+  }
+  .author-pg-publish h2 {
+    font-size: 45px;
+}
+  .author-detail-footer {
+    padding-bottom: 30px;
+}
+  .author-banner-bg-right{
+    background-size: contain;
+    background-position: center;
+  }
+  .book-card-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+  .action-row .col {
+    width: 45%;
+    flex-basis: unset;
+    margin-bottom: 20px;
+}
+.cash-prize-list{
+  flex-wrap: wrap;
+}
+.dashboard-top-row {
+  margin-bottom: 30px;
+}
+  .row.about-grid{
+    background-size: 40%;
+    padding: 30px;
+  }
+  .about-content h2 {
+    font-size: 35px;
+    line-height: 45px;
+}
+.row.featured-row{
+  padding: 25px;
+}
   button.navbar-toggler.collapsed.jb_front_nav_close {
     position: absolute;
     right: 11px;
