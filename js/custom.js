@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+	
+
 	$(".toggle-password").click(function() {
 		$(this).toggleClass("fa-eye fa-eye-slash");
 		input = $(this).parent().find("input");
@@ -92,6 +94,20 @@ $(document).ready(function() {
 	   speed: 800,
 	   slidesToShow: 3,
 	   arrows: true,
+	   responsive: [
+		{
+		  breakpoint: 991,
+		  settings: {
+			slidesToShow: 3,
+		  }
+		},
+		{
+		  breakpoint: 767,
+		  settings: {
+			slidesToShow: 1,
+		  }
+		}
+	  ]
 	});
 
 	$('.top-slider').slick({
@@ -120,6 +136,20 @@ $(document).ready(function() {
 	   speed: 800,
 	   slidesToShow: 2.1,
 	   arrows: true,
+	   responsive: [
+		{
+		  breakpoint: 991,
+		  settings: {
+			slidesToShow: 2.1,
+		  }
+		},
+		{
+		  breakpoint: 767,
+		  settings: {
+			slidesToShow: 1.1,
+		  }
+		}
+	  ]
 	});
 	$('.related-book-slide').slick({
 		centerMode: false,

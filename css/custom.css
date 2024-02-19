@@ -175,6 +175,12 @@ h2.banner-bg-text {
 .sart-writing-popular-features .row{
   gap:30px 0px
 }
+.win-table-header-right, .table-heading-item {
+  gap:20px 20px
+}
+.book-card-liting-item-left{
+  gap:10px 10px
+}
 .author-social i:before{
   font-size: 16px;
 }
@@ -586,10 +592,12 @@ span.price-num {
   font-weight: 700;
 }
 
-.book-slide-content h3 {
+.book-slide-content h3  {
   font-size: 20px;
 }
-
+.dropdown-header h3{
+  font-size: 16px;
+}
 .popular-authors .book-slide-content {
   display: flex;
   flex-direction: column;
@@ -992,7 +1000,7 @@ li.slick-active {
   height: 100px;
 }
 
-.footer-logo img {
+.footer-logo img, .book-card-im-wrapper img {
   object-fit: contain;
 }
 
@@ -1243,7 +1251,7 @@ li.slick-active {
   background: #d54e4e;
 }
 
-.cta-section {
+.cta-section, .start-book-banner {
   background-image: url(https://wpbingosite.com/wordpress/oriobook/wp-content/uploads/2023/07/back-2.jpg);
   background-size: cover;
 
@@ -2290,7 +2298,7 @@ table th {
   flex-wrap: wrap;
   align-items: center;
   position: relative;
-  padding-left: 35px;
+  padding-left: 35px; 
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 14px;
@@ -2371,10 +2379,779 @@ table th {
   filter: invert(1);
     opacity: 0.1;
 }
+img.profile-im {
+  width: 50px;
+  height: 50px;
+  background: #fff4e3;
+  border-radius: 100%;
+  object-fit: contain;
+}
+img.arrow-icon {
+  width: 10px;
+  height: 10px;
+}
+.dropdown-toggle::after{
+ display:none;
+}
+.login-dropdown a.dropdown-toggle {
+  gap: 10px;
+}
+.login-dropdown .dropdown-menu {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  z-index: 99999;
+}
+.login-dropdown .navbar-nav .dropdown-menu {
+  position: static;
+  float: none;
+  border-radius: 15px;
+}
+.login-dropdown a.dropdown-item {
+  padding: 5px 20px;
+  color:#151515;
+  font-weight:500;
+}
+.login-dropdown .dropdown-footer {
+  border-top: 1px solid #e1e1e1;
+}
+.login-dropdown .dropdown-header {
+  background: #fef5f5;
+  display: block;
+  margin:0;
+}
+.login-dropdown .dropdown-menu{
+  min-width: 15.25rem;
+}
+.dashboard-banner {
+  background-color: #fff4e3;
+}
+.dashboard-banner{
+  padding:60px 0px;
+}
+.dashboard-banner-content{
+  position: relative;
+  z-index:9999;
+}
+.sales-insight-block h4{
+  font-size: 16px;
+}
+.sales-item {
+  background: #f1ede2;
+  display: flex;
+  width: fit-content;
+  padding: 10px 30px;
+}
+.sales-insight-block {
+  gap: 20px;
+}
+
+.sales-item-icon {
+  width: 40px;
+  height: 40px;
+  background: #d54e4e;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.sales-item {
+  background: #f1ede2;
+  display: flex;
+  width: fit-content;
+  padding: 20px 20px;
+  border-radius: 12px;
+  gap: 20px;
+}
+
+.action-item-icon {
+  width: 50px;
+  height: 50px;
+  background: #fef5f5;
+  padding: 13px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.action-item {
+  background:  #e8e6b5;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  height: 100%;
+}
+.action-item h5{
+  font-size:16px;
+}
+.dashboard-banner:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  background: #fff;
+  bottom: 0;
+}
+.dashboard-banner-im-wrapper{
+  width:100%;
+  height:300px;
+}
+.dashboard-banner-im-wrapper img{
+  object-fit: contain;
+}
+.cash-prize-listing h6{
+  font-size: 18px;
+}
+.cash-prize-list img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+.course-prize-item {
+  border: 1px dashed;
+  border-color: #d54e4e;
+  border-radius: 30px;
+  background: #e8e6b5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 20px;
+  width: fit-content;
+  gap: 10px;
+}
+.cash-prize-list{
+  display:flex;
+  align-items:center;
+  gap:20px
+}
+.course-prize-item p {
+  font-weight: 700;
+}
+.win-table .row {
+  border: 1px dashed;
+  border-color: #d54e4e;
+  padding: 15px 20px;
+}
+.book-ashboard-footer .section-breadcrumb{
+  background-image:none;
+}
+.book-ashboard-footer  .section-breadcrumb ul li a {
+  font-size: 20px;
+}
+.book-ashboard-footer  .section-breadcrumb ul li a.btn-view {
+  font-size: 16px !important;
+}
+.book-ashboard-footer  .section-breadcrumb ul {
+  gap: 20px;
+}
+.book-card-im-wrapper {
+  height: 160px;
+}
+button.btn-del {
+  background-color: #d54e4e;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 400;
+  padding: 8px 20px;
+  letter-spacing: 1px;
+  position: relative;
+  display: flex;
+  gap: 10px;
+  border-radius:30px;
+  border:0px;
+  box-shadow: 5px 5px 0px #eaa451;
+}
+.book-card-right h2{
+  font-size: 18px;
+  font-weight:700;
+}
+.book-card-right h2 {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 700;
+  border-bottom: 1px dashed #d54e4e;
+  padding-bottom: 10px;
+}
+.book-card-liting-item-left i {
+  font-size: 17px;
+  color: #d54e4e;
+}
+.complete{
+  color:#00CD57
+}
+.bg-round{
+  width: 16px;
+  height:16px;
+  background-color:#e1e1e1;
+  display: flex;
+  border-radius: 100%;
+}
+.book-card-detail-listing {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.book-dashboard-card {
+  border: 1px solid #0000001f;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 0px #eaa45129;
+}
+
+/* custom radio button */
+.custom-radio {
+  display: block;
+  position: relative;
+  padding-left: 33px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.custom-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.custom-radio .checkmark {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border:1px solid #e1e1e1
+}
+
+/* On mouse-over, add a grey background color */
+.custom-radio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.custom-radio input:checked ~ .checkmark {
+  background-color: #d54e4e;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.custom-radio .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.custom-radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.custom-radio .checkmark:after {
+  top: 6px;
+  left: 6px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: white;
+}
+.label-heading{
+  font-family: 'Lora', serif !important;
+  font-size: 20px;
+  font-weight: 600;
+  color: #151515;
+}
+.start-publish-form form {
+  padding: 30px;
+  background: #fff;
+  border-radius: 6px;
+  border: 5px solid #e1e1e11a;
+  box-shadow: 0px 7px 24px 0px rgba(17, 12, 46, 0.15);
+}
+.start-book-banner{
+  padding:100px 0px;
+}
+.start-publish-form {
+  position: relative;
+  bottom: 65px;
+}
+
+.radio-buttons 
+{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.custom-radio input 
+{
+  display: none;
+}
+.radio-buttons  .custom-radio{
+  padding-left: 0px !important;
+  margin-bottom: 0;
+}
+.radio-btn 
+{
+  width: 100%;
+  min-height: 100%;
+  border: 3px solid transparent;
+  display: inline-block;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 0 20px #c3c3c367;
+  cursor: pointer;
+  padding: 30px;
+}
+
+.radio-btn > i {
+  color: #ffffff;
+  background-color: #FFDAE9;
+  font-size: 20px;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%) scale(2);
+  border-radius: 50px;
+  padding: 3px;
+  transition: 0.5s;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.radio-btn .hobbies-icon 
+{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.radio-btn .hobbies-icon img
+{
+  display:block;
+  width:100%;
+  margin-bottom:20px;
+  
+}
+.custom-radio input:checked + .radio-btn 
+{
+  border: 2px solid #d54e4e;
+}
+.radio-btn h3{
+  font-size: 20px;
+}
+.package-listing {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.package-listing p {
+  text-align: left;
+}
+.start-write-btn-bottom, .mobile-right-menu{
+  display:none;
+}
 /*=================================== media query css ===================================*/
 
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
+  .trnd-add {
+    height: 200px;
+}
+.trend-list {
+  margin-top: 30px;
+}
+.category-layout-im-wrapper {
+  height: 100px;
+  width: 30%;
+}
+.category-layout-1 {
+  display: flex;
+  align-items: center;
+}
+.catehory-content {
+  order: 2;
+}
+.category-layout-im-wrapper {
+  order: 1;
+}
+.category-layout-1.two .category-layout-im-wrapper {
+  height: 150pxpx;
+  width: 100%;
+}
+  .blog-row {
+    margin-top: 30px;
+    gap: 100px 0px;
+}
+.events .row, .course-row .row {
+  gap: 30px 0px;
+}
+.courses-price{
+  position: unset;
+  padding: 2px 15px 2px;
+  font-size: 12px;
+}
+.category-layout-1, .category-layout-1.two {
+  padding: 15px;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+.catehory-content h5 {
+  font-size: 18px;
+}
+.row.category-inner-grid {
+  margin-top: 30px;
+}
+.catehory-content h5 {
+  margin: 0 !important;
+}
+.entry-details{
+  padding: 15px;
+}
+.courses-price {
+  width: fit-content;
+  margin-bottom: 15px;
+}
+.courses-meta {
+  margin: 10px 0px;
+}
+.event-date-v2{
+  font-size: 18px;
+}
+.event-date{
+  width: 35px;
+  height: 35px;
+}
+.event-date h6 {
+  font-size: 14px;
+}
+.event-col-entry-title{
+  padding: 15px;
+}
+.event-col-entry-title h3{
+  font-size: 18px;
+  line-height: 150%;
+}
+.event-time p {
+  font-size: 12px;
+}
+.entry-date, ul.g5blog__post-meta a{
+  font-size: 12px;
+}
+.counter-block{
+  flex-direction: column;
+  padding: 15px;
+  text-align: center;
+}
+.counter .row {
+  gap: 30px 0px;
+}
+.counter-detail h4{
+  font-size: 20px;
+}
+.counter-block {
+  gap: 10px;
+}
+.g5blog__post-content{
+  padding: 15px;
+}
+h3.g5blog__post-title{
+  font-size: 16px;
+  padding: 0;
+}
+.count-im-wrapper {
+  width: 45px;
+  height: 45px;
+  padding: 11px;
+}
+.testimonial-slide-wrap{
+  padding: 20px;
+}
+.testimonial{
+  padding-top: 40px
+}
+h3.testimonial-title{
+  margin-bottom: 20px;
+}
+.testimonial .content p{
+  font-size: 14px;
+    line-height: 150%;
+}
+.details{
+  margin-top: 20px;
+}
+span.border-line{
+  width: 1px;
+    height: 10px;
+    position: relative;
+    top: 3px;
+}
+  .featured-book-block{
+    padding: 20px;
+  }
+  .footer-copyright img {
+    width: 50% !important;
+}
+.footer-widget-title{
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.row.footer-menu-row {
+  gap: 30px 0px;
+}
+.footer-logo {
+  width: 150px !important;
+  height: 100px;
+  margin: 0 auto;
+}
+.footer_bottom{
+  margin-top: 30px;
+  padding: 30px 0px;
+  padding: 10px 0px;
+}
+.footer-copyright p{
+  font-size:12px;
+  text-align: center;
+}
+  .featured-book-block .slick-slide{
+    margin-right: 5px;
+    margin-left: 15px;
+  }
+  .footer-copyright{
+    display: block;
+    text-align: center;
+  }
+  .cta-section h6{
+    font-size: 30px;
+  }
+  .cta-text{
+    width: 100% !important;
+  }
+  .cta-section, .start-book-banner{
+    background-size: revert;
+  }
+  .section-heading h2 {
+    font-size: 25px;
+}
+.blog-row {
+  margin-top: 30px;
+}
+  .banner-content a, .btn-view{
+    padding: 2px 10px;
+    font-size: 12px;
+    box-shadow: 3px 3px 0px #eaa451;
+  }
+  .popular-authors .slick-next, .featured-book-section .slick-next {
+    right: 10px !important;
+}
+.popular-authors .slick-prev, .featured-book-section .slick-prev {
+  right: 38px !important;
+}
+.popular-authors .slick-prev, .popular-authors .slick-next, .featured-book-section .slick-prev, .featured-book-section .slick-next{
+  width: 25px;
+    height: 25px;
+    top: -45px !important;
+}
+.footer-right{
+  margin-right: 0;
+}
+  .popular-authors{
+    margin: 0px 0px;
+    padding: 20px;
+    bottom: 30px;
+  }
+  .heading-line {
+    display: none;
+}
+  .book-slide-content h3{
+    font-size: 16px;
+  }
+  .book-slide-content p {
+    font-size: 12px;
+}
+.autor-block{
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
+.authors .slick-list{
+  overflow: unset;
+  padding-left: 0 !important;
+}
+  .author-im-wrapper{
+    width: 80px;
+    height: 80px;
+  }
+  .top-slide-content h1{
+    font-size: 35px;
+  }
+  .section-banner-slide {
+    height: 60vh;
+}
+  .navbar-brand {
+    width: 120px;
+}
+.mobile-top-menu, .mobile-right-menu {
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    order: 2;
+}
+form.search-bar{
+  height: 35px;
+}
+form.search-bar input{
+  height: 100%;
+  padding-left: 14px;
+}
+form.search-bar button{
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  top: 2px;
+  position: relative;
+}
+.mobile-right-menu{
+gap:10px
+}
+  .start-write-btn-bottom{
+    display:block;
+  }
+  a.navbar-nav-link.start-write-btn-top, .menu-right {
+    display: none;
+}
+  button.navbar-toggler i {
+    position: unset;
+    top: 25px;
+    right: 18px;
+    background: #d54e4e;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  a.find-store {
+    display: none;
+}
+  .cash-prizes {
+    padding-top: 0;
+}
+  .action-row .col {
+    width: 45%;
+    flex-basis: unset;
+    margin-bottom: 20px;
+}
+.action-item h5 {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.action-item{
+  height: 100%;
+}
+  .row.win-table-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+  .sales-insight-block {
+    flex-direction: column;
+    justify-content: flex-start !important;
+}
+.course-prize-item {
+  width: 50% !important;
+}
+.cash-prize-list, ul.breadcrumb-list{
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.book-card-im-wrapper img {
+  object-fit: cover;
+  width: 100%;
+}
+.book-card-im-wrapper {
+  height: 250px;
+  width: 70%;
+  margin: 0 auto;
+}
+.win-table .row{
+  padding: 15px 5px
+}
+.book-card-right{
+  margin-top: 30px;
+}
+.book-card-left {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.course-prize-item {
+  width: 45% !important;
+}
+.win-table-header-right {
+  gap: 10px;
+}
+.banner-sub-heading, .banner-header-text h2{
+  text-align:left;
+}
+.cash-prize-listing {
+  margin-bottom: 30px;
+}
+.banner-header-text h2 {
+  margin-bottom: 10px;
+}
+.sales-item{
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+}
+.banner-header-text, .sales p, .banner-header-text h2, .banner-header-text p {
+  text-align: center;
+}
+.book-dashboard-card-row.row.mt-5 {
+  gap: 20px;
+}
+.section-spacer {
+  padding: 30px 0px;
+}
+.dashboard-banner-im-wrapper {
+  margin: 40px 0px;
+}
+  .label-heading{
+    font-size: 18px;
+  }
+  .start-book-banner {
+    padding: 40px 0px 100px;
+}
+.start-publish-form form{
+  padding: 20px;
+}
+h2{
+  font-size: 28px;
+  line-height: 100%;
+}
   .contact-form.auth-form {
     width: 100% !important;
     padding: 0px 20px;
@@ -2402,7 +3179,7 @@ table th {
   }
 
   button.navbar-toggler i {
-    position: absolute;
+    position:unset;
     top: 25px;
     right: 18px;
   }
@@ -2419,7 +3196,8 @@ table th {
     justify-content: center;
     width: 100%;
     margin: 0 !important;
-    padding: 15px 0px !important;
+    padding: 5px 0px !important;
+    font-size: 14px;
   }
 
   .navbar-collapse {
@@ -2434,6 +3212,26 @@ table th {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .start-write-btn-bottom{
+    display:block;
+  }
+  a.navbar-nav-link.start-write-btn-top {
+    display: none;
+}
+  button.navbar-toggler i {
+    position: unset;
+    top: 25px;
+    right: 18px;
+    background: #d54e4e;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
   .contact-form.auth-form {
     width: 100% !important;
     padding: 0px 20px;

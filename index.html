@@ -50,14 +50,100 @@
          <div class="top-menu pt-2">
             <div class="container">
                <div class="row">
-                  <div class="col-md-3">
+                  <div class="col-md-3 mobile-top-menu">
                      <div class="navbar-brand py-0">
                         <a href="index.html" class="d-flex logo_heading">
                            <img src="images/burgeon_House.png" alt="Burgeon House">
                         </a>
                      </div>
+                     <div class="mobile-right-menu">
+                        <div class="language-drop">
+                           <select id="language" class="js-states form-control">
+                              <option value="AF">Afrikaans</option>
+                              <option value="SQ">Albanian</option>
+                              <option value="AR">Arabic</option>
+                              <option value="HY">Armenian</option>
+                              <option value="EU">Basque</option>
+                              <option value="BN">Bengali</option>
+                              <option value="BG">Bulgarian</option>
+                              <option value="CA">Catalan</option>
+                              <option value="KM">Cambodian</option>
+                              <option value="ZH">Chinese (Mandarin)</option>
+                              <option value="HR">Croatian</option>
+                              <option value="CS">Czech</option>
+                              <option value="DA">Danish</option>
+                              <option value="NL">Dutch</option>
+                              <option value="EN">English</option>
+                              <option value="ET">Estonian</option>
+                              <option value="FJ">Fiji</option>
+                              <option value="FI">Finnish</option>
+                              <option value="FR">French</option>
+                              <option value="KA">Georgian</option>
+                              <option value="DE">German</option>
+                              <option value="EL">Greek</option>
+                              <option value="GU">Gujarati</option>
+                              <option value="HE">Hebrew</option>
+                              <option value="HI">Hindi</option>
+                              <option value="HU">Hungarian</option>
+                              <option value="IS">Icelandic</option>
+                              <option value="ID">Indonesian</option>
+                              <option value="GA">Irish</option>
+                              <option value="IT">Italian</option>
+                              <option value="JA">Japanese</option>
+                              <option value="JW">Javanese</option>
+                              <option value="KO">Korean</option>
+                              <option value="LA">Latin</option>
+                              <option value="LV">Latvian</option>
+                              <option value="LT">Lithuanian</option>
+                              <option value="MK">Macedonian</option>
+                              <option value="MS">Malay</option>
+                              <option value="ML">Malayalam</option>
+                              <option value="MT">Maltese</option>
+                              <option value="MI">Maori</option>
+                              <option value="MR">Marathi</option>
+                              <option value="MN">Mongolian</option>
+                              <option value="NE">Nepali</option>
+                              <option value="NO">Norwegian</option>
+                              <option value="FA">Persian</option>
+                              <option value="PL">Polish</option>
+                              <option value="PT">Portuguese</option>
+                              <option value="PA">Punjabi</option>
+                              <option value="QU">Quechua</option>
+                              <option value="RO">Romanian</option>
+                              <option value="RU">Russian</option>
+                              <option value="SM">Samoan</option>
+                              <option value="SR">Serbian</option>
+                              <option value="SK">Slovak</option>
+                              <option value="SL">Slovenian</option>
+                              <option value="ES">Spanish</option>
+                              <option value="SW">Swahili</option>
+                              <option value="SV">Swedish </option>
+                              <option value="TA">Tamil</option>
+                              <option value="TT">Tatar</option>
+                              <option value="TE">Telugu</option>
+                              <option value="TH">Thai</option>
+                              <option value="BO">Tibetan</option>
+                              <option value="TO">Tonga</option>
+                              <option value="TR">Turkish</option>
+                              <option value="UK">Ukrainian</option>
+                              <option value="UR">Urdu</option>
+                              <option value="UZ">Uzbek</option>
+                              <option value="VI">Vietnamese</option>
+                              <option value="CY">Welsh</option>
+                              <option value="XH">Xhosa</option>
+                           </select>
+                        </div>
+                        <div class="d-lg-none">
+                           <button type="button" class="navbar-toggler collapsed" data-toggle="collapse"
+                              data-target="#navbar-navigation" aria-expanded="false">
+                              <i class="fa fa-bars" aria-hidden="true"></i>
+                           </button>
+                        </div>
+                       
+                     </div>
                   </div>
                   <div class="col-md-9">
+
                      <div class="top-menu-right d-flex align-items-center">
                         <form class="search-bar">
                            <div class="form-group">
@@ -82,17 +168,7 @@
          </div>
          <div class="navbar navbar-expand-lg navbar-sticky  custom_header">
             <div class="container">
-               <!-- <div class="navbar-brand py-0">
-                     <a href="index.html" class="d-flex logo_heading">
-                        <img src="images/burgeon_House.png" alt="Burgeon House">
-                     </a>
-                  </div> -->
-               <div class="d-lg-none">
-                  <button type="button" class="navbar-toggler collapsed" data-toggle="collapse"
-                     data-target="#navbar-navigation" aria-expanded="false">
-                     <i class="fa fa-bars" aria-hidden="true"></i>
-                  </button>
-               </div>
+
                <div class="navbar-collapse collapse" id="navbar-navigation">
                   <div class="d-lg-none d-lg-block jb_front_nav_close">
                      <button type="button" class="navbar-toggler collapsed jb_front_nav_close">
@@ -100,7 +176,7 @@
                      </button>
                   </div>
                   <div class="menu-right">
-                     <a href="work.html" class="navbar-nav-link">Start Writing</a>
+                     <a href="work.html" class="navbar-nav-link start-write-btn-top">Start Writing</a>
                   </div>
                   <ul class="main-menu non-tranparent nav navbar-nav w-100 justify-content-center">
                      <li class="nav-item float-left">
@@ -118,12 +194,15 @@
                      <li class="nav-item float-left">
                         <a href="work.html" class="navbar-nav-link">About Us</a>
                      </li>
+                     <div class="menu-right">
+                        <a href="work.html" class="navbar-nav-link start-write-btn-bottom">Start Writing</a>
+                     </div>
                   </ul>
                   <div class="menu-right">
                      <div class="menu-contact d-flex align-items-center">
                         <div class="contact-detail">
-                           <div class="country-drop">
-                              <select id="country" class="js-states form-control">
+                           <div class="language-drop">
+                              <select id="language" class="js-states form-control">
                                  <option value="AF">Afrikaans</option>
                                  <option value="SQ">Albanian</option>
                                  <option value="AR">Arabic</option>
@@ -230,15 +309,6 @@
                            </div>
                         </div>
                      </div>
-                     <div class="top-slide center"
-                        style="background-image: url(./images/banner-1.png); background-color: #f2ede3; background-size: contain;">
-                        <div class="top-slide-content text-center">
-                           <p class="banner-sub-heading m-0">#1 Trending Topics </p>
-                           <h1 class="font-lora"><span class="shape-text">journey</span> into the <br />culinary
-                              <br />wonderland</h1>
-                           <a href="#" class="btn-black pr-btn d-inline-flex">Read More</a>
-                        </div>
-                     </div>
                      <div class="top-slide"
                         style="background-image: url(./images/banner-5.png); background-color: #f2ede3; background-size: cover;">
                         <div class="container">
@@ -328,12 +398,12 @@
                      </div>
                   </div>
                </div>
-              
-
-              
 
 
-                <!-- <div class="banner-slider position-relative">
+
+
+
+               <!-- <div class="banner-slider position-relative">
                   <div class="carousel">
                      <div class="book-slide">
                         <div class="book-im-wrapper">
@@ -508,7 +578,7 @@
                <div class="trending section-spacer">
                   <div class="container">
                      <div class="section-heading d-flex align-items-center mb-4">
-                        <h2>What's In  <span class="shape-text">Trend</span></h2>
+                        <h2>What's In <span class="shape-text">Trend</span></h2>
                         <div class="heading-line"></div>
                         <a href="#" class="btn-view">View All ></a>
                      </div>
@@ -522,12 +592,12 @@
                            <div class="trend-list">
                               <div class="trend-block position-relative">
                                  <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-4 col-md-4">
                                        <div class="book-im-wrapper">
                                           <img class="w-100 h-100" src="./images/books/34.jpg">
                                        </div>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-8 col-md-8">
                                        <div class="featured-block-content">
                                           <h5>My Dearest Darkest</h5>
 
@@ -545,12 +615,12 @@
                               </div>
                               <div class="trend-block position-relative">
                                  <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-4 col-md-4">
                                        <div class="book-im-wrapper">
                                           <img class="w-100 h-100" src="./images/books/book16.png">
                                        </div>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-8 col-md-8">
                                        <div class="featured-block-content">
                                           <h5>My Dearest Darkest</h5>
 
@@ -568,12 +638,12 @@
                               </div>
                               <div class="trend-block position-relative">
                                  <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-4 col-md-4">
                                        <div class="book-im-wrapper">
                                           <img class="w-100 h-100" src="./images/books/product-5.jpg">
                                        </div>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-8 col-md-8">
                                        <div class="featured-block-content">
                                           <h5>My Dearest Darkest</h5>
 
@@ -595,68 +665,69 @@
                      </div>
                   </div>
                </div>
-              
-              <div class="section-category section-spacer">
-               <div class="container">
-                  <div class="section-heading d-flex align-items-center mb-4">
-                     <h2>Popular <span class="shape-text">categories</span></h2>
-                     <div class="heading-line"></div>
-                     <a href="#" class="btn-view">View All ></a>
-                  </div>
-                  <div class="row">
-                     <div class="col-md-4">
-                        <div class="category-layout-1">
-                           <div class="category-layout-im-wrapper">
-                              <img src="../books/images/books/product-82.jpg" class="w-100 h-100">
-                           </div>
-                           <div class="catehory-content">
-                              <h5 class="mb-0 mt-2">Romance</h5>
+
+               <div class="section-category section-spacer">
+                  <div class="container">
+                     <div class="section-heading d-flex align-items-center mb-4">
+                        <h2>Popular <span class="shape-text">categories</span></h2>
+                        <div class="heading-line"></div>
+                        <a href="#" class="btn-view">View All ></a>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4">
+                           <div class="category-layout-1">
+                              <div class="category-layout-im-wrapper">
+                                 <img src="../books/images/books/product-82.jpg" class="w-100 h-100">
+                              </div>
+                              <div class="catehory-content">
+                                 <h5 class="mb-0 mt-2">Romance</h5>
+                              </div>
                            </div>
                         </div>
-                     </div>
-                     <div class="col-md-8">
-                        <div class="row category-inner-grid">
-                           <div class="col-md-6">
-                              <div class="category-layout-1 two">
-                                
-                                 <div class="catehory-content">
-                                    <h5 class="mb-0 mt-2">Fiction</h5>
-                                 </div>
-                                 <div class="category-layout-im-wrapper">
-                                    <img src="../books/images/books/product-76.jpg" class="w-100 h-100">
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-md-6">
-                              <div class="category-layout-1 two">
-                                
-                                 <div class="catehory-content">
-                                    <h5 class="mb-0 mt-2">Family story</h5>
-                                 </div>
-                                 <div class="category-layout-im-wrapper">
-                                    <img src="../books/images/books/product-109.jpg" class="w-100 h-100">
+                        <div class="col-md-8">
+                           <div class="row category-inner-grid">
+                              <div class="col-6 col-md-6">
+                                 <div class="category-layout-1 two">
+
+                                    <div class="catehory-content">
+                                       <h5 class="mb-0 mt-2">Fiction</h5>
+                                    </div>
+                                    <div class="category-layout-im-wrapper">
+                                       <img src="../books/images/books/product-76.jpg" class="w-100 h-100">
+                                    </div>
                                  </div>
                               </div>
-                           </div>
-                           <div class="col-md-6">
-                              <div class="category-layout-1 two">
-                                
-                                 <div class="catehory-content">
-                                    <h5 class="mb-0 mt-2">Comedy</h5>
-                                 </div>
-                                 <div class="category-layout-im-wrapper">
-                                    <img src="../books/images/books/img-13.png" class="w-100 h-100">
+                              <div class="col-6 col-md-6">
+                                 <div class="category-layout-1 two">
+
+                                    <div class="catehory-content">
+                                       <h5 class="mb-0 mt-2">Family story</h5>
+                                    </div>
+                                    <div class="category-layout-im-wrapper">
+                                       <img src="../books/images/books/product-109.jpg" class="w-100 h-100">
+                                    </div>
                                  </div>
                               </div>
-                           </div>
-                           <div class="col-md-6">
-                              <div class="category-layout-1 two">
-                                
-                                 <div class="catehory-content">
-                                    <h5 class="mb-0 mt-2">History</h5>
+                              <div class="col-6 col-md-6">
+                                 <div class="category-layout-1 two">
+
+                                    <div class="catehory-content">
+                                       <h5 class="mb-0 mt-2">Comedy</h5>
+                                    </div>
+                                    <div class="category-layout-im-wrapper">
+                                       <img src="../books/images/books/img-13.png" class="w-100 h-100">
+                                    </div>
                                  </div>
-                                 <div class="category-layout-im-wrapper">
-                                    <img src="../books/images/books/book16.png" class="w-100 h-100">
+                              </div>
+                              <div class="col-6 col-md-6">
+                                 <div class="category-layout-1 two">
+
+                                    <div class="catehory-content">
+                                       <h5 class="mb-0 mt-2">History</h5>
+                                    </div>
+                                    <div class="category-layout-im-wrapper">
+                                       <img src="../books/images/books/book16.png" class="w-100 h-100">
+                                    </div>
                                  </div>
                               </div>
                            </div>
@@ -664,164 +735,173 @@
                      </div>
                   </div>
                </div>
-              </div>
 
-              <div class="section-course section-spacer">
-               <div class="container">
-                  <div class="section-heading d-flex align-items-center mb-4">
-                     <h2>Featured  <span class="shape-text">Courses</span></h2>
-                     <div class="heading-line"></div>
-                     <a href="#" class="btn-view">View All ></a>
-                  </div>
-                  <div class="course-row">
-                     <div class="row mt-5">
-                        <div class="col-lg-4">
-                           <div class="blog-entry  position-relative">
-                              <div class="entry-thumb">
-                                 <div class="couse-im-wrapper" href="#">
-                                    <img src="https://authore.g5plus.net/wp-content/uploads/2023/08/blog-11-545x590.jpg"
-                                       class="w-100 h-100"></div>
-                                 <div class="overlay"> <a href="course-detail.html">View Course</a> </div>
-                              </div>
-                              <div class="entry-details">
-                                 <div class="courses-price "> <span>$25.99</span></div>
-      
-                                 <div class="entry-title">
-                                    <h4><a href="#">Practising
-                                          yoga on the sea shore is a good method</a></h4>
-                                 </div>
-                                 <div class="courses-meta d-flex">
-                                    <p class="mb-0"><a href="" class="text-black" rel="tag">30 Days</a></p>
-      
-                                 
-      
-                                    <p class="mb-0"><a href="" class="text-black" rel="tag">Advanced</a></p>
-                                 </div>
-                                 <p class="courses-times "><i class="fa fa-clock-o mr-2" aria-hidden="true"></i> <a
-                                       href="#" rel="tag">1:00 hr/day</a></p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-lg-4">
-                           <div class="blog-entry  position-relative">
-                              <div class="entry-thumb">
-                                 <div class="couse-im-wrapper" href="#">
-                                    <img src="https://authore.g5plus.net/wp-content/uploads/2023/08/blog-11-545x590.jpg"
-                                       class="w-100 h-100"></div>
-                                 <div class="overlay"> <a href="course-detail.html">View Course</a> </div>
-                              </div>
-                              <div class="entry-details">
-                                 <div class="courses-price "> <span>$25.99</span></div>
-      
-                                 <div class="entry-title">
-                                    <h4><a href="#">Practising
-                                          yoga on the sea shore is a good method</a></h4>
-                                 </div>
-                                 <div class="courses-meta d-flex">
-                                    <p class="mb-0"><a href="" class="text-black" rel="tag">30 Days</a></p>
-      
-                                 
-      
-                                    <p class="mb-0"><a href="" class="text-black" rel="tag">Advanced</a></p>
-                                 </div>
-                                 <p class="courses-times "><i class="fa fa-clock-o mr-2" aria-hidden="true"></i> <a
-                                       href="#" rel="tag">1:00 hr/day</a></p>
-                              </div>
-                           </div>
-                        </div>
-      
-                        <div class="col-lg-4">
-                           <div class="blog-entry  position-relative">
-                              <div class="entry-thumb">
-                                 <div class="couse-im-wrapper" href="#">
-                                    <img src="https://authore.g5plus.net/wp-content/uploads/2023/08/blog-11-545x590.jpg"
-                                       class="w-100 h-100"></div>
-                                 <div class="overlay"> <a href="course-detail.html">View Course</a> </div>
-                              </div>
-                              <div class="entry-details">
-                                 <div class="courses-price "> <span>$25.99</span></div>
-      
-                                 <div class="entry-title">
-                                    <h4><a href="#">Practising
-                                          yoga on the sea shore is a good method</a></h4>
-                                 </div>
-                                 <div class="courses-meta d-flex">
-                                    <p class="mb-0"><a href="" class="text-black" rel="tag">30 Days</a></p>
-      
-                                 
-      
-                                    <p class="mb-0"><a href="" class="text-black" rel="tag">Advanced</a></p>
-                                 </div>
-                                 <p class="courses-times "><i class="fa fa-clock-o mr-2" aria-hidden="true"></i> <a
-                                       href="#" rel="tag">1:00 hr/day</a></p>
-                              </div>
-                           </div>
-                        </div>
-                     </div> 
-                  </div>
-               </div>
-              </div>
-
-
-              <div class="events section-spacer">
-               <div class="container">
-                  <div class="section-heading d-flex align-items-center mb-4">
-                     <h2>Exclusive <span class="shape-text">Events</span></h2>
-                     <div class="heading-line"></div>
-                     <a href="#" class="btn-view">View All ></a>
-                  </div>
-                  <div class="row">
-                     <div class="col-md-6">
-                        <a href="event-detail.html" class="event-col position-relative d-block text-black">
-                           <div class="event-col-im-wrapper">
-                              <img src="https://authore.g5plus.net/wp-content/uploads/2023/08/blog-11-545x590.jpg" alt="Mahamrityunjaya Mantra" class="w-100">
-                           </div>
-                           <div class="event-col-content">
-                              <div class="event-col-top-content d-flex align-items-center">
-                                <div class="event-date position-relative">
-                                  <h6 class="text-center">03</h6>
-                                </div>
-                                <div class="event-time">
-                                  <p class="mb-0 text-black event-date-v2">Apr, 3 Days 6 Classes 08AM to 05 PM</p>
-                                  <p class="mb-0 text-black event-location">Tapovan, Rishikesh, Uttarakhand, INDIA</p>
-                                </div>
-                              </div>
-                              <div class="event-col-entry-title">
-                                <h3 class="mb-0 text-black"> Authors Discuss Their Year In Reading </h3>
-                              </div>
-                           </div>
-                         </a> 
+               <div class="section-course section-spacer">
+                  <div class="container">
+                     <div class="section-heading d-flex align-items-center mb-4">
+                        <h2>Featured <span class="shape-text">Courses</span></h2>
+                        <div class="heading-line"></div>
+                        <a href="#" class="btn-view">View All ></a>
                      </div>
-                     <div class="col-md-6">
-                        <a href="event-detail.html" class="event-col position-relative d-block text-black">
-                           <div class="event-col-im-wrapper">
-                              <img src="https://authore.g5plus.net/wp-content/uploads/2023/08/blog-14-545x590.jpg" alt="Mahamrityunjaya Mantra" class="w-100">
-                           </div>
-                           <div class="event-col-content">
-                              <div class="event-col-top-content d-flex align-items-center">
-                                <div class="event-date position-relative">
-                                  <h6 class="text-center">03</h6>
-                                </div>
-                                <div class="event-time">
-                                  <p class="mb-0 text-black event-date-v2">Apr, 3 Days 6 Classes 08AM to 05 PM</p>
-                                  <p class="mb-0 text-black event-location">Tapovan, Rishikesh, Uttarakhand, INDIA</p>
-                                </div>
+                     <div class="course-row">
+                        <div class="row mt-5">
+                           <div class="col-lg-4">
+                              <div class="blog-entry  position-relative">
+                                 <div class="entry-thumb">
+                                    <div class="couse-im-wrapper" href="#">
+                                       <img
+                                          src="https://authore.g5plus.net/wp-content/uploads/2023/08/blog-11-545x590.jpg"
+                                          class="w-100 h-100">
+                                    </div>
+                                    <div class="overlay"> <a href="course-detail.html">View Course</a> </div>
+                                 </div>
+                                 <div class="entry-details">
+                                    <div class="courses-price "> <span>$25.99</span></div>
+
+                                    <div class="entry-title">
+                                       <h4><a href="#">Practising
+                                             yoga on the sea shore is a good method</a></h4>
+                                    </div>
+                                    <div class="courses-meta d-flex">
+                                       <p class="mb-0"><a href="" class="text-black" rel="tag">30 Days</a></p>
+
+
+
+                                       <p class="mb-0"><a href="" class="text-black" rel="tag">Advanced</a></p>
+                                    </div>
+                                    <p class="courses-times "><i class="fa fa-clock-o mr-2" aria-hidden="true"></i> <a
+                                          href="#" rel="tag">1:00 hr/day</a></p>
+                                 </div>
                               </div>
-                              <div class="event-col-entry-title">
-                                <h3 class="mb-0 text-black">  40 Popular Narrative Nonfiction Books  </h3>
+                           </div>
+                           <div class="col-lg-4">
+                              <div class="blog-entry  position-relative">
+                                 <div class="entry-thumb">
+                                    <div class="couse-im-wrapper" href="#">
+                                       <img
+                                          src="https://authore.g5plus.net/wp-content/uploads/2023/08/blog-11-545x590.jpg"
+                                          class="w-100 h-100">
+                                    </div>
+                                    <div class="overlay"> <a href="course-detail.html">View Course</a> </div>
+                                 </div>
+                                 <div class="entry-details">
+                                    <div class="courses-price "> <span>$25.99</span></div>
+
+                                    <div class="entry-title">
+                                       <h4><a href="#">Practising
+                                             yoga on the sea shore is a good method</a></h4>
+                                    </div>
+                                    <div class="courses-meta d-flex">
+                                       <p class="mb-0"><a href="" class="text-black" rel="tag">30 Days</a></p>
+
+
+
+                                       <p class="mb-0"><a href="" class="text-black" rel="tag">Advanced</a></p>
+                                    </div>
+                                    <p class="courses-times "><i class="fa fa-clock-o mr-2" aria-hidden="true"></i> <a
+                                          href="#" rel="tag">1:00 hr/day</a></p>
+                                 </div>
                               </div>
                            </div>
-                         </a> 
+
+                           <div class="col-lg-4">
+                              <div class="blog-entry  position-relative">
+                                 <div class="entry-thumb">
+                                    <div class="couse-im-wrapper" href="#">
+                                       <img
+                                          src="https://authore.g5plus.net/wp-content/uploads/2023/08/blog-11-545x590.jpg"
+                                          class="w-100 h-100">
+                                    </div>
+                                    <div class="overlay"> <a href="course-detail.html">View Course</a> </div>
+                                 </div>
+                                 <div class="entry-details">
+                                    <div class="courses-price "> <span>$25.99</span></div>
+
+                                    <div class="entry-title">
+                                       <h4><a href="#">Practising
+                                             yoga on the sea shore is a good method</a></h4>
+                                    </div>
+                                    <div class="courses-meta d-flex">
+                                       <p class="mb-0"><a href="" class="text-black" rel="tag">30 Days</a></p>
+
+
+
+                                       <p class="mb-0"><a href="" class="text-black" rel="tag">Advanced</a></p>
+                                    </div>
+                                    <p class="courses-times "><i class="fa fa-clock-o mr-2" aria-hidden="true"></i> <a
+                                          href="#" rel="tag">1:00 hr/day</a></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
-            </div>
+
+
+               <div class="events section-spacer">
+                  <div class="container">
+                     <div class="section-heading d-flex align-items-center mb-4">
+                        <h2>Exclusive <span class="shape-text">Events</span></h2>
+                        <div class="heading-line"></div>
+                        <a href="#" class="btn-view">View All ></a>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <a href="event-detail.html" class="event-col position-relative d-block text-black">
+                              <div class="event-col-im-wrapper">
+                                 <img src="https://authore.g5plus.net/wp-content/uploads/2023/08/blog-11-545x590.jpg"
+                                    alt="Mahamrityunjaya Mantra" class="w-100">
+                              </div>
+                              <div class="event-col-content">
+                                 <div class="event-col-top-content d-flex align-items-center">
+                                    <div class="event-date position-relative">
+                                       <h6 class="text-center">03</h6>
+                                    </div>
+                                    <div class="event-time">
+                                       <p class="mb-0 text-black event-date-v2">Apr, 3 Days 6 Classes 08AM to 05 PM</p>
+                                       <p class="mb-0 text-black event-location">Tapovan, Rishikesh, Uttarakhand, INDIA
+                                       </p>
+                                    </div>
+                                 </div>
+                                 <div class="event-col-entry-title">
+                                    <h3 class="mb-0 text-black"> Authors Discuss Their Year In Reading </h3>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col-md-6">
+                           <a href="event-detail.html" class="event-col position-relative d-block text-black">
+                              <div class="event-col-im-wrapper">
+                                 <img src="https://authore.g5plus.net/wp-content/uploads/2023/08/blog-14-545x590.jpg"
+                                    alt="Mahamrityunjaya Mantra" class="w-100">
+                              </div>
+                              <div class="event-col-content">
+                                 <div class="event-col-top-content d-flex align-items-center">
+                                    <div class="event-date position-relative">
+                                       <h6 class="text-center">03</h6>
+                                    </div>
+                                    <div class="event-time">
+                                       <p class="mb-0 text-black event-date-v2">Apr, 3 Days 6 Classes 08AM to 05 PM</p>
+                                       <p class="mb-0 text-black event-location">Tapovan, Rishikesh, Uttarakhand, INDIA
+                                       </p>
+                                    </div>
+                                 </div>
+                                 <div class="event-col-entry-title">
+                                    <h3 class="mb-0 text-black"> 40 Popular Narrative Nonfiction Books </h3>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
                <div class="testimonial">
                   <div class="container">
                      <div class="row">
                         <div class="col-md-5">
                            <div class="testimonial-slide-wrap">
-                              <h3 class="testimonial-title">What people  saying!</h3>
+                              <h3 class="testimonial-title">What people saying!</h3>
                               <div class="testimonial-slider">
                                  <div class="testimonial-slide-block">
                                     <div class="content">
@@ -865,7 +945,7 @@
                <div class="counter section-spacer">
                   <div class="container">
                      <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-6 col-md-3">
                            <div class="counter-block one d-flex align-items-center">
                               <div class="count-im-wrapper">
                                  <img class="h-100 w-100" src="./images/books.svg">
@@ -878,7 +958,7 @@
 
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-6 col-md-3">
                            <div class="counter-block two d-flex align-items-center">
                               <div class="count-im-wrapper">
                                  <img class="h-100 w-100" src="./images/cart.svg">
@@ -889,7 +969,7 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-6 col-md-3">
                            <div class="counter-block three d-flex align-items-center">
                               <div class="count-im-wrapper">
                                  <img class="h-100 w-100" src="./images/users.svg">
@@ -900,7 +980,7 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-6 col-md-3">
                            <div class="counter-block four d-flex align-items-center">
                               <div class="count-im-wrapper">
                                  <img class="h-100 w-100" src="./images/happy.svg">
@@ -926,15 +1006,20 @@
                         <div class="col-md-4">
                            <div class="blog-item position-relative">
                               <div class="blog-im-wrapper">
-                                 <img class="w-100 h-100" src="https://authore.g5plus.net/wp-content/uploads/2023/08/blog-03-555x336.jpg" class="w-100">
+                                 <img class="w-100 h-100"
+                                    src="https://authore.g5plus.net/wp-content/uploads/2023/08/blog-03-555x336.jpg"
+                                    class="w-100">
                               </div>
                               <div class="g5blog__post-content">
                                  <div class="entry-date text-center"> <a href="#" tabindex="0">August 11, 2023</a></div>
-                                 <h3 class="g5blog__post-title text-center"> <a title="Behind the Scenes with Author Victoria Aveyard" href="#" tabindex="0">Behind the Scenes with Author Victoria Aveyard</a></h3>
+                                 <h3 class="g5blog__post-title text-center"> <a
+                                       title="Behind the Scenes with Author Victoria Aveyard" href="#"
+                                       tabindex="0">Behind the Scenes with Author Victoria Aveyard</a></h3>
                                  <ul class="g5blog__post-meta">
                                     <li class="meta-comment"> <a href="#" tabindex="0"><span>0 Comments</span></a></li>
                                     <span class="border-line"></span>
-                                    <li class="cat-meta">  <a href="https://authore.g5plus.net/category/introduce/" rel="category tag" tabindex="0">Introduce</a></li>
+                                    <li class="cat-meta"> <a href="https://authore.g5plus.net/category/introduce/"
+                                          rel="category tag" tabindex="0">Introduce</a></li>
                                  </ul>
                               </div>
                            </div>
@@ -942,15 +1027,20 @@
                         <div class="col-md-4">
                            <div class="blog-item position-relative">
                               <div class="blog-im-wrapper">
-                                 <img class="w-100 h-100" src="https://authore.g5plus.net/wp-content/uploads/2023/08/blog-07-555x336.jpg" class="w-100">
+                                 <img class="w-100 h-100"
+                                    src="https://authore.g5plus.net/wp-content/uploads/2023/08/blog-07-555x336.jpg"
+                                    class="w-100">
                               </div>
                               <div class="g5blog__post-content">
                                  <div class="entry-date text-center"> <a href="#" tabindex="0">August 10, 2023</a></div>
-                                 <h3 class="g5blog__post-title text-center"> <a title="Behind the Scenes with Author Victoria Aveyard" href="#" tabindex="0">Excellent Blogging Tips: A Smart Place To Start!</a></h3>
+                                 <h3 class="g5blog__post-title text-center"> <a
+                                       title="Behind the Scenes with Author Victoria Aveyard" href="#"
+                                       tabindex="0">Excellent Blogging Tips: A Smart Place To Start!</a></h3>
                                  <ul class="g5blog__post-meta">
                                     <li class="meta-comment"> <a href="#" tabindex="0"><span>0 Comments</span></a></li>
                                     <span class="border-line"></span>
-                                    <li class="cat-meta">  <a href="https://authore.g5plus.net/category/introduce/" rel="category tag" tabindex="0">History</a></li>
+                                    <li class="cat-meta"> <a href="https://authore.g5plus.net/category/introduce/"
+                                          rel="category tag" tabindex="0">History</a></li>
                                  </ul>
                               </div>
                            </div>
@@ -958,15 +1048,20 @@
                         <div class="col-md-4">
                            <div class="blog-item position-relative">
                               <div class="blog-im-wrapper">
-                                 <img class="w-100 h-100" src="https://authore.g5plus.net/wp-content/uploads/2023/08/blog-12-555x336.jpg" class="w-100">
+                                 <img class="w-100 h-100"
+                                    src="https://authore.g5plus.net/wp-content/uploads/2023/08/blog-12-555x336.jpg"
+                                    class="w-100">
                               </div>
                               <div class="g5blog__post-content">
                                  <div class="entry-date text-center"> <a href="#" tabindex="0">August 10, 2023</a></div>
-                                 <h3 class="g5blog__post-title text-center"> <a title="Behind the Scenes with Author Victoria Aveyard" href="#" tabindex="0">Excellent Blogging Tips: A Smart Place To Start!</a></h3>
+                                 <h3 class="g5blog__post-title text-center"> <a
+                                       title="Behind the Scenes with Author Victoria Aveyard" href="#"
+                                       tabindex="0">Excellent Blogging Tips: A Smart Place To Start!</a></h3>
                                  <ul class="g5blog__post-meta">
                                     <li class="meta-comment"> <a href="#" tabindex="0"><span>0 Comments</span></a></li>
                                     <span class="border-line"></span>
-                                    <li class="cat-meta">  <a href="https://authore.g5plus.net/category/introduce/" rel="category tag" tabindex="0">History</a></li>
+                                    <li class="cat-meta"> <a href="https://authore.g5plus.net/category/introduce/"
+                                          rel="category tag" tabindex="0">History</a></li>
                                  </ul>
                               </div>
                            </div>
@@ -976,14 +1071,15 @@
                </div>
                <div class="cta-section section-spacer">
                   <div class="container">
-                        <div class="cta-text text-center w-50 mx-auto">
-                           <p class="banner-sub-heading m-0 pb-3">SHOP ONLINE </p>
-                           <h6 class="mb-4">Get a 20% discount on your
-                              <span class="shape-text">first order</span>!</h6>
-                              <p class="banner-sub-heading m-0">All Books are flat 50% Off</p>
-                              <a href="#" class="btn-black pr-btn d-inline-flex mt-4" tabindex="0">Shop Collection</a>
-                             
-                        </div>
+                     <div class="cta-text text-center w-50 mx-auto">
+                        <p class="banner-sub-heading m-0 pb-3">SHOP ONLINE </p>
+                        <h6 class="mb-4">Get a 20% discount on your
+                           <span class="shape-text">first order</span>!
+                        </h6>
+                        <p class="banner-sub-heading m-0">All Books are flat 50% Off</p>
+                        <a href="#" class="btn-black pr-btn d-inline-flex mt-4" tabindex="0">Shop Collection</a>
+
+                     </div>
                   </div>
                </div>
             </div>
@@ -1001,17 +1097,17 @@
                      </div>
                   </div>
                   <div class="col-md-8">
-                     <div class="row">
-                        <div class="col-md-3">
+                     <div class="row footer-menu-row">
+                        <div class="col-6 col-md-3">
                            <h5 class="footer-widget-title">Read</h5>
                            <ul class="mb-0 p-0">
                               <li><a href="#">Trending This Week</a></li>
                               <li><a href="#">New Releases</a></li>
-                              <li><a href="#">Editor's Picks   </a></li>
+                              <li><a href="#">Editor's Picks </a></li>
                               <li><a href="#">Bestsellers</a></li>
                            </ul>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-6 col-md-3">
                            <h5 class="footer-widget-title">Explore</h5>
                            <ul class="mb-0 p-0">
                               <li><a href="#">About us</a></li>
@@ -1020,7 +1116,7 @@
                               <li><a href="#">Sign in/Join</a></li>
                            </ul>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-6 col-md-3">
                            <h5 class="footer-widget-title">Our Service</h5>
                            <ul class="mb-0 p-0">
                               <li><a href="#">Help Center</a></li>
@@ -1031,7 +1127,7 @@
                               <li><a href="#">Store Pickup</a></li>
                            </ul>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-6 col-md-3">
                            <h5 class="footer-widget-title">Categories</h5>
                            <ul class="mb-0 p-0">
                               <li><a href="#">Action</a></li>
