@@ -1774,7 +1774,13 @@ a.event-col {
 h3.g5blog__post-title {
   font-size: 20px;
   line-height: normal;
-  padding: 5px 0px
+  padding: 5px 0px;
+  overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 ul.g5blog__post-meta {
   padding: 0;
@@ -3234,9 +3240,105 @@ h2{
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  button.navbar-toggler.collapsed.jb_front_nav_close {
+    position: absolute;
+    right: 11px;
+    top: -72px;
+}
+.menu-contact.d-flex.align-items-center {
+  display: none !important;
+}
+ul.main-menu {
+  padding: 30px;
+}
+.menu-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-header li.nav-item {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+  .mobile-top-menu, .mobile-right-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    order: 2;
+    gap: 15px;
+}
+.top-menu-right {
+  justify-content: space-between;
+}
+  .testimonial{
+    padding-top: 50px;
+  }
   .start-write-btn-bottom{
     display:block;
   }
+  .testimonial-slide-wrap{
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+  .counter .row {
+    gap: 30px 0px;
+}
+.banner-content a, .btn-view{
+  width: 200px;   
+   text-align: center;
+}
+.courses-price{
+  position: unset;
+}
+.entry-details{
+  padding: 20px;
+}
+.courses-price{
+  width: fit-content;
+    margin-bottom: 10px;
+}
+.authors .slick-list{
+  overflow: unset;
+}
+.popular-authors{
+  margin: 0;
+  border-radius: 0;
+  bottom: 0;
+}
+h3.testimonial-title{
+  margin-bottom: 20px;
+}
+.heading-line{
+  display: none;
+}
+.section-heading {
+  justify-content: space-between;
+}
+.featured-book .book-im-wrapper {
+  height: 140px;
+}
+.section-banner-slide {
+  height: 35vh;
+}
+a.find-store{
+  display: none;
+}
+.featured-block-content{
+  margin-top: 0;
+}
+.trend-block .book-im-wrapper {
+  height: 100px;
+}
+.trnd-add {
+  height: 383px;
+}.category-layout-im-wrapper {
+  height: 200px;
+}
+.category-layout-1.two .category-layout-im-wrapper {
+  height: 114px;
+  width: 116px;
+}
   a.navbar-nav-link.start-write-btn-top {
     display: none;
 }
