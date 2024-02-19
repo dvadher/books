@@ -2835,8 +2835,25 @@ a.sitemap-link {
   max-width: 200px;
   font-weight: 500;
 }
-
-
+a.backbtn {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  z-index: 99;
+  font-weight: 600;
+}
+a.backbtn i {
+  background: #efb82e;
+  width: 10px;
+  height: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  padding: 15px;
+  margin-right: 10px !important;
+  color: #d54e4e;
+}
 
 /*=================================== media query css ===================================*/
 
