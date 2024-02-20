@@ -1,6 +1,37 @@
 $(document).ready(function() {
 
-	
+	function startTime() {
+		const today = new Date();
+		let h = 23 - today.getHours();
+		let m = 59 - today.getMinutes();
+		let s = 59 - today.getSeconds();
+		let d = 30 - today.getSeconds();
+		m = checkTime(m);
+		s = checkTime(s);
+		const hrs = document.querySelectorAll(".hrs");
+		const mins = document.querySelectorAll(".mins");
+		const secs = document.querySelectorAll(".secs");
+		const days = document.querySelectorAll(".days");
+		[...hrs].forEach((hr)=>{
+		  hr.innerHTML = h;
+		});
+		[...mins].forEach((mn)=>{
+		  mn.innerHTML = m;
+		});
+		[...secs].forEach((sc)=>{
+		  sc.innerHTML = s;
+		});
+		setTimeout(startTime, 1000);
+	  }
+	  
+	  function checkTime(i) {
+		if (i < 10) {
+		  i = "0" + i
+		}; // add zero in front of numbers < 10
+		return i;
+	  }
+	  startTime();
+	  
 
 	$(".toggle-password").click(function() {
 		$(this).toggleClass("fa-eye fa-eye-slash");
