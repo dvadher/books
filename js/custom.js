@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+	$('.moreless-button').click(function() {
+		$('.moretext').slideToggle();
+		if ($('.moreless-button').text() == "View more Features") {
+		  $(this).text("View less Features")
+		} else {
+		  $(this).text("View more Features")
+		}
+	  });
+
 	function startTime() {
 		const today = new Date();
 		let h = 23 - today.getHours();
