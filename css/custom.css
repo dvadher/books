@@ -3337,6 +3337,15 @@ button.close {
   top: 6px;
   left: 9px;
 }
+.dashboard-header-top {
+  position: fixed;
+  width: 76.33333%;
+  top: 0;
+  z-index: 99;
+}
+.dashboard-wrapper {
+  margin-top: 60px;
+}
 /*=================================== media query css ===================================*/
 
 
