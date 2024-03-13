@@ -4,7 +4,7 @@
 <head>
    <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <title>Burgeon House - Contact</title>
+   <title>Burgeon House - About</title>
    <meta name="description" content="">
    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
    <meta http-equiv="x-ua-compatible" content="IE=10">
@@ -109,7 +109,7 @@
                      <li class="nav-item float-left">
                         <a href="#industries" class="navbar-nav-link nav_jump">Publishing </a>
                      </li>
-                    
+                  
                      <li class="nav-item float-left">
                         <a href="work.html" class="navbar-nav-link">About Us</a>
                      </li>
@@ -208,200 +208,155 @@
          <div class="page-content">
             <div class="content-wrapper">
                <div class="section-breadcrumb text-center">
-                  <h1>Events</h1>
+                  <h1>Cart</h1>
                   <ul class="breadcrumb-list m-0 p-0 d-flex align-items-center justify-content-center mt-2">
                      <li class="font-small"><a href="https://authore.g5plus.net">
-                        <span>Home</span></a></li>
+                           <span>Home</span></a></li>
                      <li class="breadcrumb-sep font-small">/</li>
-                     <li class="breadcrumb-leaf font-small text-marun">Events</li>
+                     <li class="breadcrumb-leaf font-small text-marun">Cart</li>
                   </ul>
                </div>
-            
-               <div class="event-listing section-spacer">
-                  <div class="container">
-                     <div class="row">
-                        <div class="col-md-6">
-                           <a href="event-detail.html" class="event-col position-relative d-block text-black">
-                              <div class="event-col-im-wrapper">
-                                 <img src="https://authore.g5plus.net/wp-content/uploads/2023/08/blog-11-545x590.jpg" alt="Mahamrityunjaya Mantra" class="w-100">
-                              </div>
-                              <div class="event-col-content">
-                                 <div class="event-col-top-content d-flex align-items-center">
-                                   <div class="event-date position-relative">
-                                     <h6 class="text-center">03</h6>
-                                   </div>
-                                   <div class="event-time">
-                                     <p class="mb-0 text-black event-date-v2">Apr, 3 Days 6 Classes 08AM to 05 PM</p>
-                                     <p class="mb-0 text-black event-location">Tapovan, Rishikesh, Uttarakhand, INDIA</p>
-                                   </div>
+               <div class="cart-detail section-spacer">
+                     <div class="container">
+                        <div class="empty-cart inner_cart">
+                           <div class="product-detail-state">
+                              <div class="product-state-detail">
+                                 <div>
+                                    <div class="product-wrap-item mb-4">
+                                       <div class="shop-table">
+                                          <table class="w-100">
+                                             <thead>
+                                                <tr>
+                                                   <th class="col-product-info">Product</th>
+                                                   <th class="product-price">Price</th>
+                                                   <th class="product-quantity">Quantity</th>
+                                                   <th class="product-subtotal">Subtotal</th>
+                                                </tr>
+                                             </thead>
+                                             <tbody>
+                                                <tr>
+                                                   <td class="col-product-info">
+                                                      <div class="d-flex align-items-center">
+                                                         <a href="#">
+                                                            <div class="product-detail-wrap-im">
+                                                               <img
+                                                                  src="./images/product-2.jpg"
+                                                                  class="w-100 h-100" alt="My Dearest Darkest">
+                                                            </div>
+                                                         </a>
+                                                         <div class="product-detail-wrap-content product-content ml-3">
+                                                            <a
+                                                               href="#">
+                                                               <h6 class="text-black">My Dearest Darkest</h6>
+                                                            </a>
+                                                            <div class="d-flex align-items-end mt-2">
+                                                               <button
+                                                                  class="border-0 bg-transparent text-underline font-small text-marun remove"
+                                                                  onclick="removeCartItem('76','120','42');">Remove</button>
+                                                            </div>
+                                                            <div id="carterror_42" style="color:#F00"></div>
+                                                         </div>
+                                                      </div>
+                                                   </td>
+                                                   <td class="product-price">
+                                                      <p class="product-price text-marun mt-0 ">₹ 1,199.00</p>
+                                                   </td>
+                                                   <td class="product-quantity">
+                                                      <div class="qty-container">
+                                                         <button class="qty-btn-minus btn-light" type="button"
+                                                            onclick="itemCartQtyChange('cartQuantity_42',42, 120, 'minus', 76);">
+                                                            -
+                                                         </button>
+                                                         <input type="text" name="qty" id="cartQuantity_42" value="1"
+                                                            class="input-qty" readonly="readonly">
+                                                         <button class="qty-btn-plus btn-light" type="button"
+                                                            onclick="itemCartQtyChange('cartQuantity_42',42, 120, 'plus', 76);">
+                                                            +
+                                                         </button>
+                                                      </div>
+                                                   </td>
+                                                   <td class="product-subtotal">
+                                                      <p class="product-price text-marun mt-0 ">₹ 1,199.00</p>
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td class="col-product-info">
+                                                      <div class="d-flex align-items-center">
+                                                         <a href="#">
+                                                            <div class="product-detail-wrap-im">
+                                                               <img
+                                                                  src="./images/books/34.jpg"
+                                                                  class="w-100 h-100" alt="My Dearest Darkest">
+                                                            </div>
+                                                         </a>
+                                                         <div class="product-detail-wrap-content product-content ml-3">
+                                                            <a
+                                                               href="#">
+                                                               <h6 class="text-black">My Dearest Darkest</h6>
+                                                            </a>
+                                                            <div class="d-flex align-items-end mt-2">
+                                                               <button
+                                                                  class="border-0 bg-transparent text-underline font-small text-marun remove"
+                                                                  onclick="removeCartItem('76','120','42');">Remove</button>
+                                                            </div>
+                                                            <div id="carterror_42" style="color:#F00"></div>
+                                                         </div>
+                                                      </div>
+                                                   </td>
+                                                   <td class="product-price">
+                                                      <p class="product-price text-marun mt-0 ">₹ 1,199.00</p>
+                                                   </td>
+                                                   <td class="product-quantity">
+                                                      <div class="qty-container">
+                                                         <button class="qty-btn-minus btn-light" type="button"
+                                                            onclick="itemCartQtyChange('cartQuantity_42',42, 120, 'minus', 76);">
+                                                            -
+                                                         </button>
+                                                         <input type="text" name="qty" id="cartQuantity_42" value="1"
+                                                            class="input-qty" readonly="readonly">
+                                                         <button class="qty-btn-plus btn-light" type="button"
+                                                            onclick="itemCartQtyChange('cartQuantity_42',42, 120, 'plus', 76);">
+                                                            +
+                                                         </button>
+                                                      </div>
+                                                   </td>
+                                                   <td class="product-subtotal">
+                                                      <p class="product-price text-marun mt-0 ">₹ 1,199.00</p>
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
                                  </div>
-                                 <div class="event-col-entry-title">
-                                   <h3 class="mb-0 text-black"> Authors Discuss Their Year In Reading </h3>
-                                 </div>
-                              </div>
-                            </a> 
-                        </div>
-                        <div class="col-md-6">
-                           <a href="event-detail.html" class="event-col position-relative d-block text-black">
-                              <div class="event-col-im-wrapper">
-                                 <img src="https://authore.g5plus.net/wp-content/uploads/2023/08/blog-14-545x590.jpg" alt="Mahamrityunjaya Mantra" class="w-100">
-                              </div>
-                              <div class="event-col-content">
-                                 <div class="event-col-top-content d-flex align-items-center">
-                                   <div class="event-date position-relative">
-                                     <h6 class="text-center">03</h6>
-                                   </div>
-                                   <div class="event-time">
-                                     <p class="mb-0 text-black event-date-v2">Apr, 3 Days 6 Classes 08AM to 05 PM</p>
-                                     <p class="mb-0 text-black event-location">Tapovan, Rishikesh, Uttarakhand, INDIA</p>
-                                   </div>
-                                 </div>
-                                 <div class="event-col-entry-title">
-                                   <h3 class="mb-0 text-black">  40 Popular Narrative Nonfiction Books  </h3>
-                                 </div>
-                              </div>
-                            </a> 
-                        </div>
-                        <div class="col-md-6">
-                           <a href="event-detail.html" class="event-col position-relative d-block text-black">
-                              <div class="event-col-im-wrapper">
-                                 <img src="https://authore.g5plus.net/wp-content/uploads/2023/08/blog-11-545x590.jpg" alt="Mahamrityunjaya Mantra" class="w-100">
-                              </div>
-                              <div class="event-col-content">
-                                 <div class="event-col-top-content d-flex align-items-center">
-                                   <div class="event-date position-relative">
-                                     <h6 class="text-center">03</h6>
-                                   </div>
-                                   <div class="event-time">
-                                     <p class="mb-0 text-black event-date-v2">Apr, 3 Days 6 Classes 08AM to 05 PM</p>
-                                     <p class="mb-0 text-black event-location">Tapovan, Rishikesh, Uttarakhand, INDIA</p>
-                                   </div>
-                                 </div>
-                                 <div class="event-col-entry-title">
-                                   <h3 class="mb-0 text-black"> Authors Discuss Their Year In Reading </h3>
-                                 </div>
-                              </div>
-                            </a> 
-                        </div>
-                        <div class="col-md-6">
-                           <a href="event-detail.html" class="event-col position-relative d-block text-black">
-                              <div class="event-col-im-wrapper">
-                                 <img src="https://authore.g5plus.net/wp-content/uploads/2023/08/blog-14-545x590.jpg" alt="Mahamrityunjaya Mantra" class="w-100">
-                              </div>
-                              <div class="event-col-content">
-                                 <div class="event-col-top-content d-flex align-items-center">
-                                   <div class="event-date position-relative">
-                                     <h6 class="text-center">03</h6>
-                                   </div>
-                                   <div class="event-time">
-                                     <p class="mb-0 text-black event-date-v2">Apr, 3 Days 6 Classes 08AM to 05 PM</p>
-                                     <p class="mb-0 text-black event-location">Tapovan, Rishikesh, Uttarakhand, INDIA</p>
-                                   </div>
-                                 </div>
-                                 <div class="event-col-entry-title">
-                                   <h3 class="mb-0 text-black">  40 Popular Narrative Nonfiction Books  </h3>
-                                 </div>
-                              </div>
-                            </a> 
-                        </div>
-                        <div class="col-md-6">
-                           <a href="event-detail.html" class="event-col position-relative d-block text-black">
-                              <div class="event-col-im-wrapper">
-                                 <img src="https://authore.g5plus.net/wp-content/uploads/2023/08/blog-11-545x590.jpg" alt="Mahamrityunjaya Mantra" class="w-100">
-                              </div>
-                              <div class="event-col-content">
-                                 <div class="event-col-top-content d-flex align-items-center">
-                                   <div class="event-date position-relative">
-                                     <h6 class="text-center">03</h6>
-                                   </div>
-                                   <div class="event-time">
-                                     <p class="mb-0 text-black event-date-v2">Apr, 3 Days 6 Classes 08AM to 05 PM</p>
-                                     <p class="mb-0 text-black event-location">Tapovan, Rishikesh, Uttarakhand, INDIA</p>
-                                   </div>
-                                 </div>
-                                 <div class="event-col-entry-title">
-                                   <h3 class="mb-0 text-black"> Authors Discuss Their Year In Reading </h3>
-                                 </div>
-                              </div>
-                            </a> 
-                        </div>
-                        <div class="col-md-6">
-                           <a href="event-detail.html" class="event-col position-relative d-block text-black">
-                              <div class="event-col-im-wrapper">
-                                 <img src="https://authore.g5plus.net/wp-content/uploads/2023/08/blog-14-545x590.jpg" alt="Mahamrityunjaya Mantra" class="w-100">
-                              </div>
-                              <div class="event-col-content">
-                                 <div class="event-col-top-content d-flex align-items-center">
-                                   <div class="event-date position-relative">
-                                     <h6 class="text-center">03</h6>
-                                   </div>
-                                   <div class="event-time">
-                                     <p class="mb-0 text-black event-date-v2">Apr, 3 Days 6 Classes 08AM to 05 PM</p>
-                                     <p class="mb-0 text-black event-location">Tapovan, Rishikesh, Uttarakhand, INDIA</p>
-                                   </div>
-                                 </div>
-                                 <div class="event-col-entry-title">
-                                   <h3 class="mb-0 text-black">  40 Popular Narrative Nonfiction Books  </h3>
-                                 </div>
-                              </div>
-                            </a> 
-                        </div>
-                        <div class="col-md-6">
-                           <a href="event-detail.html" class="event-col position-relative d-block text-black">
-                              <div class="event-col-im-wrapper">
-                                 <img src="https://authore.g5plus.net/wp-content/uploads/2023/08/blog-11-545x590.jpg" alt="Mahamrityunjaya Mantra" class="w-100">
-                              </div>
-                              <div class="event-col-content">
-                                 <div class="event-col-top-content d-flex align-items-center">
-                                   <div class="event-date position-relative">
-                                     <h6 class="text-center">03</h6>
-                                   </div>
-                                   <div class="event-time">
-                                     <p class="mb-0 text-black event-date-v2">Apr, 3 Days 6 Classes 08AM to 05 PM</p>
-                                     <p class="mb-0 text-black event-location">Tapovan, Rishikesh, Uttarakhand, INDIA</p>
-                                   </div>
-                                 </div>
-                                 <div class="event-col-entry-title">
-                                   <h3 class="mb-0 text-black"> Authors Discuss Their Year In Reading </h3>
+
+                                
+                                 <div class="row justify-content-end">
+                                   
+                                    <div class="">
+                                       <form class="coupun">
+                                          <input placeholder="Enter coupon code" />
+                                          <button class="apply">Apply Coupon</button>
+                                       </form>
+                                       <div class="product-cart-footer">
+                                          
+                                          <div class="d-flex justify-content-between product-cart-total ">
+                                             <h6 class="mb-0 text-center">Subtotal</h6>
+                                             <h6 class="mb-0 cart-price font-semibold">₹55,548.00</h6>
+                                          </div>
+                                          <div class="d-flex justify-content-between">
+                                             <h6 class="mb-0 ">Total</h6>
+                                             <h6 class="mb-0 cart-price font-semibold">₹55,548.00</h6>
+                                          </div>
+                                          <a href="https://www.divinepaths.org/checkout"
+                                             class="btn-large d-block text-center checkout mt-3 btn-view w-100">Checkout</a>
+                                       </div>
+                                    </div>
                                  </div>
                               </div>
-                            </a> 
-                        </div>
-                        <div class="col-md-6">
-                           <a href="event-detail.html" class="event-col position-relative d-block text-black">
-                              <div class="event-col-im-wrapper">
-                                 <img src="https://authore.g5plus.net/wp-content/uploads/2023/08/blog-14-545x590.jpg" alt="Mahamrityunjaya Mantra" class="w-100">
-                              </div>
-                              <div class="event-col-content">
-                                 <div class="event-col-top-content d-flex align-items-center">
-                                   <div class="event-date position-relative">
-                                     <h6 class="text-center">03</h6>
-                                   </div>
-                                   <div class="event-time">
-                                     <p class="mb-0 text-black event-date-v2">Apr, 3 Days 6 Classes 08AM to 05 PM</p>
-                                     <p class="mb-0 text-black event-location">Tapovan, Rishikesh, Uttarakhand, INDIA</p>
-                                   </div>
-                                 </div>
-                                 <div class="event-col-entry-title">
-                                   <h3 class="mb-0 text-black">  40 Popular Narrative Nonfiction Books  </h3>
-                                 </div>
-                              </div>
-                            </a> 
+                           </div>
                         </div>
                      </div>
-                  </div>
-               </div>
-               <div class="cta-section section-spacer">
-                  <div class="container">
-                        <div class="cta-text text-center w-50 mx-auto">
-                           <p class="banner-sub-heading m-0 pb-3">SHOP ONLINE </p>
-                           <h6 class="mb-4">Get a 20% discount on your
-                              <span class="shape-text">first order</span>!</h6>
-                              <p class="banner-sub-heading m-0">All Books are flat 50% Off</p>
-                              <a href="#" class="btn-black pr-btn d-inline-flex mt-4" tabindex="0">Shop Collection</a>
-                             
-                        </div>
-                  </div>
                </div>
             </div>
          </div>
@@ -424,7 +379,7 @@
                            <ul class="mb-0 p-0">
                               <li><a href="#">Trending This Week</a></li>
                               <li><a href="#">New Releases</a></li>
-                              <li><a href="#">Editor's Picks   </a></li>
+                              <li><a href="#">Editor's Picks </a></li>
                               <li><a href="#">Bestsellers</a></li>
                            </ul>
                         </div>
