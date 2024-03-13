@@ -3520,6 +3520,7 @@ width:100%;
   padding: 25px 30px;
   box-shadow: 0 0 10px rgba(0,0,0,.1);
   border-radius: 11px;
+  height:100%;
 }
 .order-list-item.cart-detail .product-detail-wrap-im, .wishlist  .product-detail-wrap-im{
   width: 100px;
@@ -3561,6 +3562,30 @@ width:100%;
 .form-wrap.mt-3.contact-form {
   border: 0;
   padding: 0;
+}
+.my-account-event-date {
+  position: absolute;
+  top: 0;
+  background: red;
+  background-color: #e8e6b5;
+  padding: 5px 20px;
+}
+.my-account-events-detail h3 {
+  font-size: 20px;
+}
+.my-account-event-other-detail h5 {
+  font-size: 16px;
+}
+.my-account-events .event-col-im-wrapper {
+  height: 180px;
+}
+.my-account-events .event-col-im-wrapper img{
+  object-fit:cover;
+}
+.row.my-account-events-list-item {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e1e1e1;
 }
 /*=================================== media query css ===================================*/
 
