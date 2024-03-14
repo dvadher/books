@@ -47,31 +47,148 @@
          <div class="top-menu pt-2">
             <div class="container">
                <div class="row">
-                  <div class="col-md-3">
+                  <div class="col-lg-3 mobile-top-menu">
                      <div class="navbar-brand py-0">
                         <a href="index.html" class="d-flex logo_heading">
                            <img src="images/burgeon_House.png" alt="Burgeon House">
                         </a>
                      </div>
+                     <div class="mobile-right-menu">
+                        <div class="language-drop">
+                           <select id="language" class="js-states form-control">
+                              <option value="AF">Afrikaans</option>
+                              <option value="SQ">Albanian</option>
+                              <option value="AR">Arabic</option>
+                              <option value="HY">Armenian</option>
+                              <option value="EU">Basque</option>
+                              <option value="BN">Bengali</option>
+                              <option value="BG">Bulgarian</option>
+                              <option value="CA">Catalan</option>
+                              <option value="KM">Cambodian</option>
+                              <option value="ZH">Chinese (Mandarin)</option>
+                              <option value="HR">Croatian</option>
+                              <option value="CS">Czech</option>
+                              <option value="DA">Danish</option>
+                              <option value="NL">Dutch</option>
+                              <option value="EN">English</option>
+                              <option value="ET">Estonian</option>
+                              <option value="FJ">Fiji</option>
+                              <option value="FI">Finnish</option>
+                              <option value="FR">French</option>
+                              <option value="KA">Georgian</option>
+                              <option value="DE">German</option>
+                              <option value="EL">Greek</option>
+                              <option value="GU">Gujarati</option>
+                              <option value="HE">Hebrew</option>
+                              <option value="HI">Hindi</option>
+                              <option value="HU">Hungarian</option>
+                              <option value="IS">Icelandic</option>
+                              <option value="ID">Indonesian</option>
+                              <option value="GA">Irish</option>
+                              <option value="IT">Italian</option>
+                              <option value="JA">Japanese</option>
+                              <option value="JW">Javanese</option>
+                              <option value="KO">Korean</option>
+                              <option value="LA">Latin</option>
+                              <option value="LV">Latvian</option>
+                              <option value="LT">Lithuanian</option>
+                              <option value="MK">Macedonian</option>
+                              <option value="MS">Malay</option>
+                              <option value="ML">Malayalam</option>
+                              <option value="MT">Maltese</option>
+                              <option value="MI">Maori</option>
+                              <option value="MR">Marathi</option>
+                              <option value="MN">Mongolian</option>
+                              <option value="NE">Nepali</option>
+                              <option value="NO">Norwegian</option>
+                              <option value="FA">Persian</option>
+                              <option value="PL">Polish</option>
+                              <option value="PT">Portuguese</option>
+                              <option value="PA">Punjabi</option>
+                              <option value="QU">Quechua</option>
+                              <option value="RO">Romanian</option>
+                              <option value="RU">Russian</option>
+                              <option value="SM">Samoan</option>
+                              <option value="SR">Serbian</option>
+                              <option value="SK">Slovak</option>
+                              <option value="SL">Slovenian</option>
+                              <option value="ES">Spanish</option>
+                              <option value="SW">Swahili</option>
+                              <option value="SV">Swedish </option>
+                              <option value="TA">Tamil</option>
+                              <option value="TT">Tatar</option>
+                              <option value="TE">Telugu</option>
+                              <option value="TH">Thai</option>
+                              <option value="BO">Tibetan</option>
+                              <option value="TO">Tonga</option>
+                              <option value="TR">Turkish</option>
+                              <option value="UK">Ukrainian</option>
+                              <option value="UR">Urdu</option>
+                              <option value="UZ">Uzbek</option>
+                              <option value="VI">Vietnamese</option>
+                              <option value="CY">Welsh</option>
+                              <option value="XH">Xhosa</option>
+                           </select>
+                        </div>
+                        <div class="d-lg-none">
+                           <button type="button" class="navbar-toggler collapsed" data-toggle="collapse"
+                              data-target="#navbar-navigation" aria-expanded="false">
+                              <i class="fa fa-bars" aria-hidden="true"></i>
+                           </button>
+                        </div>
+                       
+                     </div>
                   </div>
-                  <div class="col-md-9">
+                  <div class="col-lg-9">
+
                      <div class="top-menu-right d-flex align-items-center">
                         <form class="search-bar">
                            <div class="form-group">
-                              <input type="search" placeholder="Search products…">
+                              <input type="search" placeholder="Search by Book Title or Author Name">
                            </div>
                            <button type="submit" value="Search"><img src="./images/search.svg"></button>
                         </form>
                         <div class="menu-icon-group d-flex align-items-center">
-                           <a href="" class="find-store">
-                              <img src="./images/map.svg">
-                              Find your book</a>
                            <a href="#"><img src="./images/account.svg"></a>
                            <div class="span-line"></div>
                            <a href="#"><img src="./images/heart.svg"></a>
                            <div class="span-line"></div>
                            <a href="#"><img src="./images/shopping.svg"></a>
                         </div>
+                        <ul class="navbar-nav notification login-dropdown">
+                           <li class="nav-item dropdown">
+                              <a class="dropdown-toggle jb_company_dd_lang position-relative d-flex align-items-center" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                                 <img src="./images/authors/vickey_uppal.webp" class="profile-im">
+                                 <img src="./images/dropdown-arrow.svg" class="arrow-icon">
+                              </a>
+                              <span class="tooltip-arrow navigation-tooltip"></span>
+                              <div class="dropdown-menu dropdown-menu-right jb_company_dm_lang">
+                                 <div class="dropdown-header">
+                                    <h3>Vickey Uppal</h3>
+                                    <p class="font-small d-block">vickyuppal@.com</p>
+                                 </div>
+                                 <a href="#" class="dropdown-item d-block">
+                                    Refer a Friend
+                                 </a>
+                                 <a href="#" class="dropdown-item d-block">
+                                    My Shelf
+                                  </a>
+                                  <a href="#" class="dropdown-item d-block">
+                                    My Orders
+                                  </a>
+                                  <a href="#" class="dropdown-item d-block">
+                                    Need Help?
+                                  </a>
+                                  <a href="#" class="dropdown-item d-block">
+                                    change password
+                                  </a>
+                                  <div class="dropdown-footer">
+                                    <a href="#" class="dropdown-item d-block">
+                                       Logout
+                                     </a>
+                                  </div>
+                           </li>
+                           </ul>
                      </div>
                   </div>
                </div>
@@ -79,17 +196,7 @@
          </div>
          <div class="navbar navbar-expand-lg navbar-sticky  custom_header">
             <div class="container">
-               <!-- <div class="navbar-brand py-0">
-                     <a href="index.html" class="d-flex logo_heading">
-                        <img src="images/burgeon_House.png" alt="Burgeon House">
-                     </a>
-                  </div> -->
-               <div class="d-lg-none">
-                  <button type="button" class="navbar-toggler collapsed" data-toggle="collapse"
-                     data-target="#navbar-navigation" aria-expanded="false">
-                     <i class="fa fa-bars" aria-hidden="true"></i>
-                  </button>
-               </div>
+
                <div class="navbar-collapse collapse" id="navbar-navigation">
                   <div class="d-lg-none d-lg-block jb_front_nav_close">
                      <button type="button" class="navbar-toggler collapsed jb_front_nav_close">
@@ -97,28 +204,29 @@
                      </button>
                   </div>
                   <div class="menu-right">
-                     <a href="work.html" class="navbar-nav-link">Start Writing</a>
+                     <a href="work.html" class="navbar-nav-link start-write-btn-top">Start Writing</a>
                   </div>
                   <ul class="main-menu non-tranparent nav navbar-nav w-100 justify-content-center">
                      <li class="nav-item float-left">
-                        <a href="about.html" class="navbar-nav-link">Bookstore </a>
+                        <a href="book-listing.html" class="navbar-nav-link">Bookstore </a>
                      </li>
+
                      <li class="nav-item float-left">
-                        <a href="services.html" class="navbar-nav-link">Author</a>
+                        <a href="publishing.html" class="navbar-nav-link nav_jump">Publishing </a>
                      </li>
+                    
                      <li class="nav-item float-left">
-                        <a href="#industries" class="navbar-nav-link nav_jump">Publishing </a>
+                        <a href="about-us.html" class="navbar-nav-link">About Us</a>
                      </li>
-                     
-                     <li class="nav-item float-left">
-                        <a href="work.html" class="navbar-nav-link">About Us</a>
-                     </li>
+                     <div class="menu-right">
+                        <a href="start-writing.html" class="navbar-nav-link start-write-btn-bottom">Start Writing</a>
+                     </div>
                   </ul>
                   <div class="menu-right">
                      <div class="menu-contact d-flex align-items-center">
                         <div class="contact-detail">
-                           <div class="country-drop">
-                              <select id="country" class="js-states form-control">
+                           <div class="language-drop">
+                              <select id="language" class="js-states form-control">
                                  <option value="AF">Afrikaans</option>
                                  <option value="SQ">Albanian</option>
                                  <option value="AR">Arabic</option>
@@ -284,43 +392,45 @@
                      </div>
                   </div>
                   <div class="col-md-8">
-                     <div class="row">
-                        <div class="col-md-3">
+                     <div class="row footer-menu-row">
+                        <div class="col-6 col-md-3">
+                           <h5 class="footer-widget-title">For Writers</h5>
+                           <ul class="mb-0 p-0">
+                              <li><a href="publishing.html">Get Published </a></li>
+                              <li><a href="start-writing.html">Start Writing </a></li>
+                           </ul>
+                        </div>
+                        <div class="col-6 col-md-3">
                            <h5 class="footer-widget-title">Read</h5>
                            <ul class="mb-0 p-0">
-                              <li><a href="#">Trending This Week</a></li>
-                              <li><a href="#">New Releases</a></li>
-                              <li><a href="#">Editor's Picks   </a></li>
-                              <li><a href="#">Bestsellers</a></li>
+                              <li><a href="book-listing.html">Trending This Week</a></li>
+                              <li><a href="book-listing.html">New Releases</a></li>
+                              <li><a href="book-listing.html">Editor's Picks </a></li>
+                              <li><a href="book-listing.html">Bestsellers</a></li>
                            </ul>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-6 col-md-3">
                            <h5 class="footer-widget-title">Explore</h5>
                            <ul class="mb-0 p-0">
-                              <li><a href="#">About us</a></li>
-                              <li><a href="#">Sitemap</a></li>
-                              <li><a href="#">Bookmarks</a></li>
-                              <li><a href="#">Sign in/Join</a></li>
+                            
+                              
+                              <li><a href="book-listing.html">Bookstore </a></li>
+                              <li><a href="about-us.html">About us</a></li>
+                              <li><a href="contact-us.html">Contact us</a></li>
+                              <li><a href="blogs.html">Blogs</a></li>
+                              <li><a href="faq.html">Faq</a></li>
                            </ul>
                         </div>
-                        <div class="col-md-3">
-                           <h5 class="footer-widget-title">Our Service</h5>
-                           <ul class="mb-0 p-0">
-                              <li><a href="#">Help Center</a></li>
-                              <li><a href="#">Returns</a></li>
-                              <li><a href="#">Product Recalls</a></li>
-                              <li><a href="#">Accessibility</a></li>
-                              <li><a href="#">Contact Us</a></li>
-                              <li><a href="#">Store Pickup</a></li>
-                           </ul>
-                        </div>
-                        <div class="col-md-3">
+                       
+                        <div class="col-6 col-md-3">
                            <h5 class="footer-widget-title">Categories</h5>
                            <ul class="mb-0 p-0">
-                              <li><a href="#">Action</a></li>
-                              <li><a href="#">Comedy</a></li>
-                              <li><a href="#">Drama</a></li>
-                              <li><a href="#">Horror</a></li>
+                              <li><a href="#">Fiction</a></li>
+                              <li><a href="#">Non-Fiction</a></li>
+                              <li><a href="#">Children's Books</a></li>
+                              <li><a href="#">Genres & Themes</a></li>
+                              <li><a href="#">Special Collections</a></li>
+                              <li><a href="#">Magazines</a></li>
                            </ul>
                         </div>
                      </div>
@@ -333,7 +443,12 @@
                <div class="footer-copyright">
                   <p class="text-gray">Copyright © 2022 <span class="footer-text">Burgeon House</span>. All rights
                      reserved.</p>
-                  <img src="./images/footer_img.png">
+                <div class="static-list">
+                  <ul class="mb-0 p-0 d-flex">
+                     <li><a href="#">Terms of use</a></li>
+                     <li><a href="#">Privacy Policy</a></li>
+                  </ul>
+                </div>
                </div>
             </div>
          </div>
