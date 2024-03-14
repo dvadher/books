@@ -1839,7 +1839,7 @@ ul.g5blog__post-meta li{
 }
 span.border-line {
   background: #eaa451;
-  width: 1.5px;
+  width: 1px;
   height: 18px;
 }
 .g5blog__post-content {
@@ -3473,7 +3473,9 @@ button.close {
   font-weight: 600;
 }
 .checkout-pg-content  .product-cart-footer{
-width:100%;
+  width: 100%;
+  box-shadow: none;
+  padding: 0;
 }
 .checkout-pg-content .product-detail-wrap-im {
   width: 100px;
@@ -3529,8 +3531,11 @@ width:100%;
 .order-list-item.cart-detail {
   display: flex;
 }
-.order-time-detail, .profile-flex {
+.order-time-detail, .profile-flex, .order-detail-header-flex, .order-view {
   gap:20px
+}
+.my-order-header-detail-right{
+gap:40px
 }
 .text-green{
   color:green
@@ -3586,6 +3591,38 @@ width:100%;
   padding-bottom: 30px;
   margin-bottom: 30px;
   border-bottom: 1px solid #e1e1e1;
+}
+.a-box-inner {
+  border: 1px solid #e1e1e1;
+  border-radius: 16px;
+  padding: 30px;
+}
+.my-order-header {
+  background: #e8e6b521;
+  padding: 20px;
+}
+p.font-small.order-des a {
+  text-decoration: underline;
+}
+.order-item {
+  border: 1px solid #e1e1e1;
+  border-radius: 11px;
+  padding-bottom: 10px;
+}
+.order-list-item.cart-detail {
+  padding: 20px;
+  margin-top: 10px;
+}
+button.ship-tolltip {
+  font-size: 13px;
+  border: 0;
+  padding: 0;
+  position: relative;
+  top: -9px;
+  background: transparent;
+}
+.my-order-header-item h4 {
+  font-weight: 600;
 }
 /*=================================== media query css ===================================*/
 

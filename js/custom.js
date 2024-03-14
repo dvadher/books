@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	  })
+
 	var buttonPlus  = $(".qty-btn-plus");
 var buttonMinus = $(".qty-btn-minus");
 
