@@ -1861,6 +1861,7 @@ span.border-line {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 .blog-item:hover .g5blog__post-content{
   transform: translate(-50%, -40%);
@@ -3621,9 +3622,40 @@ button.ship-tolltip {
   top: -9px;
   background: transparent;
 }
-.my-order-header-item h4 {
+.my-order-header-item h4, .view-more {
   font-weight: 600;
 }
+.comment-form input, .comment-form textarea {
+  border: 1px solid #e1e1e1 !important;
+  padding: 15px;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 14px;
+}
+.comment-form .btn-black {
+  width: fit-content !important;
+  border-radius:0px !important;
+}
+.book-review .nav-link {
+  font-size: 16px;
+  color: #242423cc !important;
+  text-transform:capitalize;
+  background: transparent;
+  border-bottom: 2px solid #fff;
+}
+.book-review .nav-tabs{
+  text-align: center;
+  justify-content: center;
+  margin-bottom:30px;
+}
+.book-review .nav-tabs .nav-item.show .nav-link, 
+.book-review .nav-tabs .nav-link.active{
+  border-color: transparent;
+  color: #000 !important;
+  border-bottom: 2px solid #d54e4e;
+}
+
+
 /*=================================== media query css ===================================*/
 
 
