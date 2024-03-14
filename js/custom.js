@@ -1,6 +1,14 @@
 $(document).ready(function() {
 
-	
+	$('.publish-testimonial-slider').slick({
+		arrow: true,
+		dots: true,
+		infinite: true,
+		speed: 300,
+		slidesToShow: 4,
+		adaptiveHeight: true,
+	});
+
 
 	$(function () {
 		$('[data-toggle="tooltip"]').tooltip()
