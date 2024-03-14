@@ -3028,7 +3028,7 @@ img.list-icon {
 .option{
   font-size: 12px;
 }
-button.btn-add {
+button.btn-add, .btn-remove {
   background-color: rgb(36, 36, 36);
   color: rgb(255, 255, 255);
   text-transform: uppercase;

@@ -12,9 +12,8 @@
    <link rel="stylesheet" href="css/bootstrap.min.css">
    <link rel="stylesheet" href="css/bootstrap_theme.min.css">
    <link rel="stylesheet" href="css/fontawesome/styles.min.css">
-   <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+   <link href="css/owl.carousel.min.css" rel="styleshee  t" type="text/css">
    <link href="css/fonts/fonts.css" rel="stylesheet">
-
    <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
       rel="stylesheet">
@@ -35,7 +34,7 @@
    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" rel="stylesheet"
       type="text/css">
    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" rel="stylesheet" type="text/css">
-
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.min.css">
 
    <!-- cursor animated -->
 
@@ -109,7 +108,6 @@
                      <li class="nav-item float-left">
                         <a href="#industries" class="navbar-nav-link nav_jump">Publishing </a>
                      </li>
-                  
                      <li class="nav-item float-left">
                         <a href="work.html" class="navbar-nav-link">About Us</a>
                      </li>
@@ -207,120 +205,68 @@
          <!-- main content -->
          <div class="page-content">
             <div class="content-wrapper">
-               <div class="section-breadcrumb text-center">
-                  <h1>Categories</h1>
-                  <ul class="breadcrumb-list m-0 p-0 d-flex align-items-center justify-content-center mt-2">
-                     <li class="font-small"><a href="https://authore.g5plus.net">
-                           <span>Home</span></a></li>
-                     <li class="breadcrumb-sep font-small">/</li>
-                     <li class="breadcrumb-leaf font-small text-marun">Categories</li>
-                  </ul>
-               </div>
-              <div class="category-listing section-spacer">
-                  <div class="container">
-                     <div class="row category-inner-grid">
-                        <div class="col-6 col-md-4">
-                           <a href="book-listing.html" class="category-layout-1 two">
-      
-                              <div class="catehory-content">
-                                 <h5 class="mb-0 mt-2">Fiction</h5>
+               <div class="container">
+                <div class="section-edit-profile section-spacer">
+                  <div class="row align-items-center justify-content-center">
+                     <div class="col-md-8">
+                        <div class="contact-form">
+                           <form>
+                              <div class="form-group mb-3">
+                                 <label class="label-heading">Name </label>
+                                 <input type="text" required="">
                               </div>
-                              <div class="category-layout-im-wrapper">
-                                 <img src="../books/images/books/product-76.jpg" class="w-100 h-100">
+                              <div class="form-group mb-3">
+                                 <label class="label-heading">Email </label>
+                                 <input type="Email" required="">
                               </div>
-                           </a>
-                        </div>
-                        <div class="col-6 col-md-4">
-                           <a href="book-listing.html"  class="category-layout-1 two">
-      
-                              <div class="catehory-content">
-                                 <h5 class="mb-0 mt-2">Non-Fiction</h5>
+                              <div class="form-group mb-3">
+                                 <label class="label-heading">Phone </label>
+                                 <input type="Phone" required="">
                               </div>
-                              <div class="category-layout-im-wrapper">
-                                 <img src="../books/images/books/product-109.jpg" class="w-100 h-100">
+                              <div class="form-group mb-4">
+                                 <label class="label-heading">Date of birth </label>
+                                 <div class="datepicker date input-group">
+                                    
+                                   <input type="text" placeholder="Choose Date" class="form-control" id="fecha1">
+                                   <div class="input-group-append">
+                                     <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                                   </div>
+                                 </div>
+                               </div>
+                              <div class="form-group mb-3">
+                                 <label class="label-heading">Gender </label>
+                                 
+                                 <div class="lan-group row">
+                                    <div class="col-4 col-md-2 m-0">
+                                       <label class="custom-radio mb-0">male
+                                          <input type="radio" name="radio">
+                                          <span class="checkmark"></span>
+                                       </label>
+                                    </div>
+                                    <div class="col-4 col-md-2 m-0">
+                                       <label class="custom-radio mb-0">Female
+                                          <input type="radio" name="radio">
+                                          <span class="checkmark"></span>
+                                       </label>
+                                    </div>
+                                  
+                                 </div>
                               </div>
-                           </a>
-                        </div>
-                        <div class="col-6 col-md-4">
-                           <a href="book-listing.html"  class="category-layout-1 two">
-      
-                              <div class="catehory-content">
-                                 <h5 class="mb-0 mt-2">Children's Books</h5>
+                             
+                            
+                            
+                              <div class="btn-group d-flex mt-5 position-relative">
+                                 
+                                 <button type="submit" id="contact-submitbtn" class="btn-view border-0">Submit</button>
+                                 </div>
                               </div>
-                              <div class="category-layout-im-wrapper">
-                                 <img src="../books/images/books/img-13.png" class="w-100 h-100">
-                              </div>
-                           </a>
-                        </div>
-                        <div class="col-6 col-md-4">
-                           <a href="book-listing.html"  class="category-layout-1 two">
-      
-                              <div class="catehory-content">
-                                 <h5 class="mb-0 mt-2">Genres & Themes</h5>
-                              </div>
-                              <div class="category-layout-im-wrapper">
-                                 <img src="../books/images/books/book16.png" class="w-100 h-100">
-                              </div>
-                           </a>
-                        </div>
-                        <div class="col-6 col-md-4">
-                           <a href="book-listing.html"  class="category-layout-1 two">
-      
-                              <div class="catehory-content">
-                                 <h5 class="mb-0 mt-2">Bestsellers & Recommendations</h5>
-                              </div>
-                              <div class="category-layout-im-wrapper">
-                                 <img src="../books/images/books/product-76.jpg" class="w-100 h-100">
-                              </div>
-                           </a>
-                        </div>
-                        <div class="col-6 col-md-4">
-                           <a href="book-listing.html" class="category-layout-1 two">
-      
-                              <div class="catehory-content">
-                                 <h5 class="mb-0 mt-2">Local & International Authors</h5>
-                              </div>
-                              <div class="category-layout-im-wrapper">
-                                 <img src="../books/images/books/product-109.jpg" class="w-100 h-100">
-                              </div>
-                           </a>
-                        </div>
-                        <div class="col-6 col-md-4">
-                           <a href="book-listing.html"  class="category-layout-1 two">
-      
-                              <div class="catehory-content">
-                                 <h5 class="mb-0 mt-2">Special Collections</h5>
-                              </div>
-                              <div class="category-layout-im-wrapper">
-                                 <img src="../books/images/books/product-76.jpg" class="w-100 h-100">
-                              </div>
-                           </a>
-                        </div>
-                        <div class="col-6 col-md-4">
-                           <a href="book-listing.html"  class="category-layout-1 two">
-      
-                              <div class="catehory-content">
-                                 <h5 class="mb-0 mt-2">Educational & Academic</h5>
-                              </div>
-                              <div class="category-layout-im-wrapper">
-                                 <img src="../books/images/books/product-109.jpg" class="w-100 h-100">
-                              </div>
-                           </a>
-                        </div>
-                        <div class="col-6 col-md-4">
-                           <a href="book-listing.html"  class="category-layout-1 two">
-      
-                              <div class="catehory-content">
-                                 <h5 class="mb-0 mt-2">Magazines</h5>
-                              </div>
-                              <div class="category-layout-im-wrapper">
-                                 <img src="../books/images/books/img-13.png" class="w-100 h-100">
-                              </div>
-                           </a>
+                           </form>
                         </div>
                      </div>
                   </div>
-              </div>
+                </div>
+                
+               </div>
             </div>
          </div>
       </div>
@@ -392,6 +338,20 @@
       </div>
    </div>
 
+
+
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+   <script>
+      $('.datepicker').datepicker({
+		language: "es",
+		autoclose: true,
+		format: "dd/mm/yyyy"
+	  });
+   </script>
    <!-- <a id="button" class="d-flex align-items-center justify-content-center vert-move"></a> -->
    <!-- footer section -->
    <script type="text/javascript" src="js/jquery.min.js"></script>
