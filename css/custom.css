@@ -4032,8 +4032,12 @@ a.btn-download{
     font-size: 14px;
     border: 0;
     border-radius: 6px;
+    display:flex;
     align-items: center;
     justify-content: center;
+}
+.dashboard-sidebar .menu-close i, button.dashboard-toogle i{
+margin: 0 !important
 }
   .dashboard-sidebar{
     width: 80%;
