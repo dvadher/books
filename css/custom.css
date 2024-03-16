@@ -3960,7 +3960,7 @@ select {
 .auth-testimonial {
   width: 100% !important;
 }
-a.backbtn{
+.auth-row a.backbtn{
   display: none;
 }
   .event-map.mb-5.pb-5 {
