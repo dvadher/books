@@ -3836,7 +3836,20 @@ select {
   font-size: 16px;
   text-transform: capitalize;
 }
-
+.static-list-item h4 {
+  font-weight: 700;
+  font-size: 20px;
+}
+.static-list-contact{
+  display:flex;
+  flex-direction: column;
+}
+.static-list-item p {
+  margin-bottom: 15px;
+}
+.static-list-contact p {
+  margin-bottom: 10px;
+}
 /*=================================== media query css ===================================*/
 
 
