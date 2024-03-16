@@ -3869,8 +3869,8 @@ select {
   text-align: center;
 }
   .container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
   .thankpg .contact-form {
     padding-top: 30px !important;
@@ -4761,7 +4761,7 @@ gap:10px
   gap: 20px;
 }
 .section-spacer {
-  padding: 30px 15px;
+  padding: 30px 0px;
 }
 
 .dashboard-banner-im-wrapper {
