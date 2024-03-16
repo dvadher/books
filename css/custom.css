@@ -3850,6 +3850,9 @@ select {
 .static-list-contact p {
   margin-bottom: 10px;
 }
+.section-heading h2 {
+  line-height: 120%;
+}
 /*=================================== media query css ===================================*/
 
 
