@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+	$(document).on('click', '.dashboard-toogle', function() {
+		$('body').addClass('dashboard-menu-show');
+	});
+
+	$(document).on('click', '.menu-close', function() {
+		$('body').removeClass('dashboard-menu-show');
+	});
+
+
 	$('.publish-testimonial-slider').slick({
 		arrow: true,
 		dots: true,
@@ -7,6 +16,20 @@ $(document).ready(function() {
 		speed: 300,
 		slidesToShow: 4,
 		adaptiveHeight: true,
+		responsive: [
+			{
+			  breakpoint: 991,
+			  settings: {
+				slidesToShow:3,
+			  }
+			},
+			{
+			  breakpoint: 767,
+			  settings: {
+				slidesToShow: 1.1,
+			  }
+			}
+		  ]
 	});
 
 

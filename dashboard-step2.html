@@ -52,13 +52,18 @@
       <!-- main content -->
       <div class="page-content">
          <div class="content-wrapper">
-            <div class="row">
+            <div class="row dashboard-step">
                <div class="col-md-3 p-0">
                   <div class="dashboard-sidebar">
-                     <a class="backbtn font-small" href="index.html">
-                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                        <span class="text-marun">Back to Home</span>
-                     </a>
+                     <div class="dahsboard-sidebar-header d-flex justify-content-between">
+                        <a class="backbtn font-small" href="index.html">
+                           <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                           <span class="text-marun">Back to Home</span>
+                        </a>
+                        <button class="menu-close d-flex d-md-block d-lg-none">
+                           <i class="fa fa-times" aria-hidden="true"></i>
+                        </button>
+                     </div>
                      <div class="dashboard-sidebar-menu mt-4">
                         <a href="#" class="dashboard-sidebar-nav-link d-flex align-items-center position-relative">
                            <div class="dashboard-sidebar-nav-link-im-wrapper">
@@ -127,10 +132,10 @@
                   <div class="dashboard-content">
                      <div class="dashboard-header-top">
                         <div class="row">
-                           <div class="col-md-5">
+                           <div class="col-md-4">
 
                            </div>
-                           <div class="col-md-7">
+                           <div class="col-md-8">
                               <div class="dashoboardheader-right d-flex">
                                  <div class="offer-counter">
                                     <div class="paragraph-sm text-white footer-sticky-16">
@@ -148,6 +153,11 @@
                                  </div>
                                  <a href="#Membership" class="btn-black pr-btn d-inline-flex join-us-button">Join us
                                     Today</a>
+                                 <div class="dashboard-menu d-flex d-md-block d-lg-none">
+                                    <button type="button" class="dashboard-toogle">
+                                       <i class="fa fa-bars" aria-hidden="true"></i>
+                                    </button>
+                                 </div>
                               </div>
                            </div>
                         </div>
@@ -165,7 +175,7 @@
                               <div class="form-group mb-3 mb-md-5">
                                  <label class="label-heading mb-3">Book size</label>
                                     <div class="size-row row">
-                                       <div class="col-md-4">
+                                       <div class="col-6 col-md-4 col-lg-4">
                                           <label class="custom-radio h-100">
                                              <input type="radio" name="radio">
                                              <span class="radio-btn">
@@ -174,7 +184,7 @@
                                             </span>
                                            </label>
                                        </div>
-                                       <div class="col-md-4">
+                                       <div class="col-6 col-md-4 col-lg-4">
                                           <label class="custom-radio h-100">
                                              <input type="radio" name="radio">
                                              <span class="radio-btn">
@@ -183,7 +193,7 @@
                                             </span>
                                            </label>
                                        </div>
-                                       <div class="col-md-4">
+                                       <div class="col-6 col-md-4 col-lg-4">
                                           <label class="custom-radio h-100">
                                              <input type="radio" name="radio" checked="checked">
                                              <span class="radio-btn">
@@ -192,7 +202,7 @@
                                             </span>
                                            </label>
                                        </div>
-                                       <div class="col-md-4">
+                                       <div class="col-6 col-md-4 col-lg-4">
                                           <label class="custom-radio h-100">
                                              <input type="radio" name="radio" checked="checked">
                                              <span class="radio-btn">
@@ -201,7 +211,7 @@
                                             </span>
                                            </label>
                                        </div>
-                                       <div class="col-md-4">
+                                       <div class="col-6 col-md-4 col-lg-4">
                                           <label class="custom-radio h-100">
                                              <input type="radio" name="radio" checked="checked">
                                              <span class="radio-btn">
@@ -238,7 +248,7 @@
                               <div class="form-group mb-3 mb-md-5">
                                  <label class="label-heading mb-3">Book interior <span class="text-marun">*</span><a href="#" class="font-small text-underline text-marun ml-2 btn-text">What is the difference?</a></label>
                                  <div class="size-row row">
-                                    <div class="col-md-4">
+                                    <div class="col-6 col-md-4 col-lg-4">
                                        <label class="custom-radio h-100">
                                           <input type="radio" name="radio">
                                           <span class="radio-btn">
@@ -247,7 +257,7 @@
                                          </span>
                                         </label>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-6 col-md-4 col-lg-4">
                                        <label class="custom-radio h-100">
                                           <input type="radio" name="radio">
                                           <span class="radio-btn">
@@ -262,7 +272,7 @@
                               <div class="form-group mb-3 mb-md-5">
                                  <label class="label-heading mb-3">Paper type <span class="text-marun">*</span><a href="#" class="font-small text-underline text-marun ml-2 btn-text">What is the difference?</a></label>
                                  <div class="size-row row">
-                                    <div class="col-md-4">
+                                    <div class="col-6 col-md-4 col-lg-4">
                                        <label class="custom-radio h-100">
                                           <input type="radio" name="radio">
                                           <span class="radio-btn">
@@ -271,7 +281,7 @@
                                          </span>
                                         </label>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-6 col-md-4 col-lg-4">
                                        <label class="custom-radio h-100">
                                           <input type="radio" name="radio">
                                           <span class="radio-btn">
@@ -280,7 +290,7 @@
                                          </span>
                                         </label>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-6 col-md-4 col-lg-4">
                                        <label class="custom-radio h-100">
                                           <input type="radio" name="radio">
                                           <span class="radio-btn">
@@ -294,7 +304,7 @@
                               <div class="form-group mb-3 mb-md-5">
                                  <label class="label-heading mb-3">Book cover lamination <span class="text-marun">*</span><a href="#" class="font-small text-underline text-marun ml-2 btn-text">What is the difference?</a></label>
                                  <div class="size-row row">
-                                    <div class="col-md-4">
+                                    <div class="col-6 col-md-4 col-lg-4">
                                        <label class="custom-radio h-100">
                                           <input type="radio" name="radio">
                                           <span class="radio-btn">
@@ -303,7 +313,7 @@
                                          </span>
                                         </label>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-6 col-md-4 col-lg-4">
                                        <label class="custom-radio h-100">
                                           <input type="radio" name="radio">
                                           <span class="radio-btn">
@@ -319,12 +329,12 @@
                                  <label class="label-heading mb-3">Cover Design<span class="text-marun">*</span></label>
                                  <div class="trend-block cover-design position-relative border-0">
                                     <div class="row">
-                                       <div class="col-3 col-md-3">
+                                       <div class="col-12 col-md-3">
                                           <div class="book-im-wrapper">
                                              <img class="w-100 h-100" src="./images/dashboard/9dcec47659579d29d0f6014dd17519bd251b5439.jpg">
                                           </div>
                                        </div>
-                                       <div class="col-9 col-md-9">
+                                       <div class="col-12 col-md-9">
                                           <div class="featured-block-content mt-0 ml-2">
                                              <h5 class="m-0">Use our Cover Creator</h5>
                                              <p class="my-2">
@@ -349,19 +359,19 @@
                                        <h6> Use our Interior Formatting Tool</h6>
                                        <p class="font-small">Works best for books with text and limited images.</p>
                                        <div class="row">
-                                          <div class="col-md-4">
+                                          <div class="col-lg-4 col-md-6">
                                              <div class="book-card-liting-item-left d-flex">
                                                 <i class="fa fa-check-circle" aria-hidden="true"></i>
                                                 <p class="m-0">Get Published in 2 days</p>
                                              </div>
                                           </div>
-                                          <div class="col-md-4">
+                                          <div class="col-lg-4 col-md-6">
                                              <div class="book-card-liting-item-left d-flex">
                                                 <i class="fa fa-check-circle" aria-hidden="true"></i>
                                                 <p class="m-0"> Publish Print & eBook</p>
                                              </div>
                                           </div>
-                                          <div class="col-md-4">
+                                          <div class="col-lg-4 col-md-6">
                                              <div class="book-card-liting-item-left d-flex">
                                                 <i class="fa fa-check-circle" aria-hidden="true"></i>
                                                 <p class="m-0">Publish in India & sell in 150+ countries</p>
@@ -376,12 +386,12 @@
                                     </div>
                                     <div class="trend-block cover-design position-relative border-0">
                                        <div class="row align-items-end">
-                                          <div class="col-3 col-md-3">
+                                          <div class="col-12 col-md-3">
                                              <div class="book-im-wrapper">
                                                 
                                              </div>
                                           </div>
-                                          <div class="col-9 col-md-9">
+                                          <div class="col-12 col-md-9">
                                              <div class="featured-block-content mt-0 ml-2">
                                              
                                                    <a href="#" class="btn-view">Launch Interior Formatting Tool</a>
@@ -396,19 +406,19 @@
                                        <h6> Upload Print Ready file in PDF format</h6>
                                        <p class="font-small">Works best for books that contain a lot of images, tables or if the book requires a customized layout.</p>
                                        <div class="row">
-                                          <div class="col-md-4">
+                                          <div class="col-lg-4 col-md-6">
                                              <div class="book-card-liting-item-left d-flex">
                                                 <i class="fa fa-check-circle" aria-hidden="true"></i>
                                                 <p class="m-0">Get Published in 7 days</p>
                                              </div>
                                           </div>
-                                          <div class="col-md-4">
+                                          <div class="col-lg-4 col-md-6">
                                              <div class="book-card-liting-item-left d-flex">
                                                 <i class="fa fa-check-circle" aria-hidden="true"></i>
                                                 <p class="m-0"> Publish Print book</p>
                                              </div>
                                           </div>
-                                          <div class="col-md-4">
+                                          <div class="col-lg-4 col-md-6">
                                              <div class="book-card-liting-item-left d-flex">
                                                 <i class="fa fa-check-circle" aria-hidden="true"></i>
                                                 <p class="m-0">Publish in India & sell in 150+ countries</p>
@@ -428,15 +438,15 @@
                                        <a href="#" class="btn-download font-small">Download Interior Design Templates & Reference Guide <i class="fa fa-chevron-circle-down font-small ml-1" aria-hidden="true"></i></a>
                                       </div>
                                     </div>
-                                    <div class="trend-block cover-design position-relative border-0">
+                                    <div class="trend-block cover-design position-relative border-0 upload-block">
                                        <div class="row align-items-end">
-                                          <div class="col-3 col-md-3">
+                                          <div class="col-12 col-md-3">
                                              <div class="book-im-wrapper">
                                                 
                                              </div>
                                              <button class="btn-add border-0 mt-2 font-small">Preview</button>
                                           </div>
-                                          <div class="col-9 col-md-9">
+                                          <div class="col-12 col-md-9">
                                              <div class="featured-block-content mt-0 ml-2">
                                                 <div class="upload">
                                                    <button class="upload__btn">Upload a file</button>
