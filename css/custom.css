@@ -1140,6 +1140,7 @@ li.slick-active {
   padding: 36px;
   display: flex;
   position: relative;
+  align-items: baseline;
 }
 
 .featured-content h4 {
@@ -1184,7 +1185,7 @@ li.slick-active {
 
 .about-sub-heading {
   font-weight: 600;
-  letter-spacing: 6px;
+  letter-spacing: 3px;
 }
 
 .about-content h2 {
@@ -3853,10 +3854,77 @@ select {
 .section-heading h2 {
   line-height: 120%;
 }
+.abt-content-wrapper p{
+  margin-bottom: 20px;
+}
+
+/* Update */
+.text-marun{
+  color: #d54e4e;
+}
+.event-detail-review-listing {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+.pay-btn {
+  background: #eaa451;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  border-radius: 30px;
+}
+.join-link {
+  padding: 6px 20px;
+}
+.event-detail-review-listing a.backbtn {
+  bottom: auto;
+  top: 20px;
+  right: 20px;
+  left: auto;
+}
+.event-detail-review-listing strong {
+  margin-right: 10px;
+}
+
+/* updated CSS */
+.step_content h2 {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  margin-bottom:20px;
+}
+.step_content {
+  background-color: #fef2b1;
+  padding: 30px;
+  border-radius: 30px;
+}
+.content-container .content{
+  padding-left: 1rem;
+    padding-right: 0;
+}
+.step_im-wrapper {
+  background: #fffcea;
+  border-radius: 12px;
+}
+
 /*=================================== media query css ===================================*/
 
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
+
+  .event-detail-review-listing{
+    padding-top: 50px;
+  }
+  .event-detail-review-listing a.backbtn{
+    top: 10px;
+    right: 10px;
+  }
+
+
+
+
   .page-content {
     overflow: hidden;
 }
