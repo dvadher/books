@@ -246,7 +246,14 @@
                                  </div>
                               </div>
                               <div class="form-group mb-3 mb-md-5">
-                                 <label class="label-heading mb-3">Book interior <span class="text-marun">*</span><a href="#" class="font-small text-underline text-marun ml-2 btn-text">What is the difference?</a></label>
+                                 <label class="label-heading mb-3">Book interior <span class="text-marun">*
+
+                                 </span>
+                              
+                                 <button type="button" class="font-small text-underline text-marun ml-2 btn-text" data-toggle="modal" data-target="#differnceModalCenter">
+                                    What is the difference?
+                                  </button>
+                              </label>
                                  <div class="size-row row">
                                     <div class="col-6 col-md-4 col-lg-4">
                                        <label class="custom-radio h-100">
@@ -270,7 +277,12 @@
                                  </div>
                               </div>
                               <div class="form-group mb-3 mb-md-5">
-                                 <label class="label-heading mb-3">Paper type <span class="text-marun">*</span><a href="#" class="font-small text-underline text-marun ml-2 btn-text">What is the difference?</a></label>
+                                 <label class="label-heading mb-3">Paper type <span class="text-marun">*</span>
+                                    <button type="button" class="font-small text-underline text-marun ml-2 btn-text" data-toggle="modal" data-target="#paperModalCenter">
+                                       What is the difference?
+                                     </button>
+                           
+                                 </label>
                                  <div class="size-row row">
                                     <div class="col-6 col-md-4 col-lg-4">
                                        <label class="custom-radio h-100">
@@ -302,7 +314,12 @@
                                  </div>
                               </div>
                               <div class="form-group mb-3 mb-md-5">
-                                 <label class="label-heading mb-3">Book cover lamination <span class="text-marun">*</span><a href="#" class="font-small text-underline text-marun ml-2 btn-text">What is the difference?</a></label>
+                                 <label class="label-heading mb-3">Book cover lamination <span class="text-marun">*</span>
+                                    <button type="button" class="font-small text-underline text-marun ml-2 btn-text" 
+                                    data-toggle="modal" data-target="#laminationModalCenter">
+                                       What is the difference?
+                                     </button>
+                                 </label>
                                  <div class="size-row row">
                                     <div class="col-6 col-md-4 col-lg-4">
                                        <label class="custom-radio h-100">
@@ -486,6 +503,171 @@
          </div>
       </div>
    </div>
+
+
+   <!-- Modal group -->
+    <!-- Modal -->
+<div class="modal fade dashboard-modal" id="differnceModalCenter" tabindex="-1" role="dialog" aria-labelledby="differnceModalCenterTitle" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered" role="document">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="differnceModalLongTitle">Book Interior</h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+       </div>
+       <div class="modal-body">
+         <div class="difference_modal">
+            <div class="row align-items-center">
+               <div class="col-md-5">
+                  <div class="difference_block">
+                     <h4>Black & White</h4>
+                     <div class="difference_im-wrapper">
+                        <img src="https://notionpress.com/diy/assets/images/global-images/book-format/bookinter1.png"> 
+                     </div> 
+                     <div class="difference_content">
+                        <p>Best suited for all Fiction and Non-Fiction books</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-2 d-flex align-items-center justify-content-center">
+                  <div class="vs">VS</div>
+               </div>
+               <div class="col-md-5">
+                  <div class="difference_block">
+                     <h4>Color</h4>
+                     <div class="difference_im-wrapper">
+                        <img src="https://notionpress.com/diy/assets/images/global-images/book-format/bookinter2.png"> 
+                     </div> 
+                     <div class="difference_content">
+                        <p>Recommended only for Cookbooks, Coffee table and Children's books</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="diff-modal-footer">
+               <button class="btn-black pr-btn d-inline-flex">
+                 Got it
+               </button>
+            </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ <div class="modal fade dashboard-modal is-paper" id="paperModalCenter" tabindex="-1" role="dialog" aria-labelledby="paperModalCenterTitle" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered" role="document">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="paperModalLongTitle">Paper Type</h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+       </div>
+       <div class="modal-body">
+         <div class="difference_modal">
+            <div class="row ">
+               <div class="col-md-3">
+                  <div class="difference_block">
+                     <h4>70 GSM Cream paper</h4>
+                     <div class="difference_im-wrapper">
+                        <img src="https://notionpress.com/diy/assets/images/global-images/book-format/papertype1.png"> 
+                     </div> 
+                     <div class="difference_content">
+                        <p>Recommended for Fiction and Non-Fiction books</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-1 d-flex align-items-center justify-content-center">
+                  <div class="vs">VS</div>
+               </div>
+               <div class="col-md-3">
+                  <div class="difference_block">
+                     <h4>70 GSM White paper</h4>
+                     <div class="difference_im-wrapper">
+                        <img src="https://notionpress.com/diy/assets/images/global-images/book-format/papertype2.png"> 
+                     </div> 
+                     <div class="difference_content">
+                        <p>Recommended for Academic books with images and tables</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-1 d-flex align-items-center justify-content-center">
+                  <div class="vs">VS</div>
+               </div>
+               <div class="col-md-3">
+                  <div class="difference_block">
+                     <h4>100 GSM Art Paper Matte Finish</h4>
+                     <div class="difference_im-wrapper">
+                        <img src="https://notionpress.com/diy/assets/images/global-images/book-format/papertype3.png"> 
+                     </div> 
+                     <div class="difference_content">
+                        <p>Recommended for Cookbooks, Children's books and Coffee table books</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="diff-modal-footer">
+               <button class="btn-black pr-btn d-inline-flex">
+                 Got it
+               </button>
+            </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ <div class="modal fade dashboard-modal" id="laminationModalCenter" tabindex="-1" role="dialog" aria-labelledby="laminationModalCenterTitle" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered" role="document">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="paperModalLongTitle">Book Interior</h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+       </div>
+       <div class="modal-body">
+         <div class="difference_modal">
+            <div class="row align-items-center">
+               <div class="col-md-5">
+                  <div class="difference_block">
+                     <h4>Gloss Finish</h4>
+                     <div class="difference_im-wrapper">
+                        <img src="https://notionpress.com/diy/assets/images/global-images/book-format/bookcover1.png"> 
+                     </div> 
+                     <div class="difference_content">
+                        <p>Recommended for darker colored covers and designs with spatial detailing</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-2 d-flex align-items-center justify-content-center">
+                  <div class="vs">VS</div>
+               </div>
+               <div class="col-md-5">
+                  <div class="difference_block">
+                     <h4>Matte Finish
+
+                     </h4>
+                     <div class="difference_im-wrapper">
+                        <img src="https://notionpress.com/diy/assets/images/global-images/book-format/bookcover2.png"> 
+                     </div> 
+                     <div class="difference_content">
+                        <p>Recommended for lighter colored covers, especially with graphic designs</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="diff-modal-footer">
+               <button class="btn-black pr-btn d-inline-flex">
+                 Got it
+               </button>
+            </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
 
    <!-- <a id="button" class="d-flex align-items-center justify-content-center vert-move"></a> -->
    <!-- footer section -->
