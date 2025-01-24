@@ -120,22 +120,32 @@ form.contact-form.plan_form{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-auto-columns: 1fr;
     display: grid;
-    gap: 13px;
+    gap: 0px;
 }
 .plan_table-item.flex {
     display: flex;
-    gap: 2rem;
+    gap: 0.5rem;
     background-color: #eaa451;
-    justify-content: space-between;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+    min-height: 140px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    border: 5px solid #fff;
+    border-radius: 16px;
 }
 .plan_table-item.bg_highlight {
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
 }
 .plan_header-price {
-    text-align: right;
+   text-align: center;
+    background: #e8e6b5;
+    padding: 6px 15px;
+    width: fit-content;
+    border-radius: 4px;
 }
 .plan_header-price h6 {
     font-size: 16px;
@@ -145,29 +155,53 @@ form.contact-form.plan_form{
     max-width: 1350px;
 }
 .plan_table-card h3 {
-    font-size: 18px;
+    font-size: 30px;
 }
 .plan_table-item.bg_highlight {
-    min-height: 100px;
+    min-height: 140px;
     display: flex;
     align-items: center;
     justify-content: left;
 }
 .plan_table-item.flex{
-   min-height: 100px;
+   min-height: 140px;
 }
 .plan_inner_content {
     background: #faa43230;
 }
 .plan_card-item-content {
-    min-height: 80px;
-    padding: 1rem;
+   min-height: 55px;
+    padding: 0px 1rem;
     display: flex;
     align-items: center;
     border-bottom: 1px solid #00000012;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 .plan_card-item-content:last-child {
     border: 0;
+}
+.plan_inner_content p {
+   line-height: 130%;
+}
+.plan_card-item p {
+    font-size: 14px;
+}
+.plan_table-item.bg_highlight.is_first {
+    background: #fff;
+    border: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.plan_inner_content.bg_highlight {
+    background-color: #eaa451;
+}
+.plan_inner_content.is_first .plan_card-item-content {
+    align-items: center;
+    justify-content: flex-start;
 }
    </style>
 </head>
@@ -482,10 +516,11 @@ form.contact-form.plan_form{
                            </div>
                            <div class="plan_table-row">
                               <div class="plan_table-card">
-                                 <div class="plan_table-item bg_highlight">
+                                 <div class="plan_table-item bg_highlight is_first">
                                     <h3>Service</h3>
+                                    <p>Inclusive of taxes</p>
                                  </div>
-                                 <div class="plan_inner_content">
+                                 <div class="plan_inner_content is_first">
                                     <div class="plan_card-item">
                                        <div class="plan_card-item-content">
                                           <p>1. ISBN</p>
@@ -594,11 +629,11 @@ form.contact-form.plan_form{
                                  <div class="plan_table-item flex">
                                     <h3>Professional</h3>
                                    <div class="plan_header-price">
-                                    <p>+GST</p>
+                                    
                                     <h6>Rs. 19,990</h6>
                                    </div>
                                  </div>
-                                 <div class="plan_inner_content">
+                                 <div class="plan_inner_content bg_highlight">
                                     <div class="plan_card-item">
                                        <div class="plan_card-item-content">
                                           <p>Yes</p>
@@ -707,7 +742,7 @@ form.contact-form.plan_form{
                                  <div class="plan_table-item flex">
                                     <h3>Elite</h3>
                                    <div class="plan_header-price">
-                                    <p>+GST</p>
+                                    
                                     <h6>Rs. 54,500</h6>
                                    </div>
                                  </div>
@@ -820,11 +855,11 @@ form.contact-form.plan_form{
                                  <div class="plan_table-item flex">
                                     <h3>Ultimate</h3>
                                    <div class="plan_header-price">
-                                    <p>+GST</p>
+                                    
                                     <h6>98,500</h6>
                                    </div>
                                  </div>
-                                 <div class="plan_inner_content">
+                                 <div class="plan_inner_content bg_highlight">
                                     <div class="plan_card-item">
                                        <div class="plan_card-item-content">
                                           <p>Y</p>
@@ -933,7 +968,7 @@ form.contact-form.plan_form{
                                  <div class="plan_table-item flex">
                                     <h3>Visionary</h3>
                                    <div class="plan_header-price">
-                                    <p>+GST</p>
+                                    
                                     <h6>Rs. 1,48,500</h6>
                                    </div>
                                  </div>
