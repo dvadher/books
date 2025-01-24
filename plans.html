@@ -41,167 +41,210 @@
 
    <style>
       .publish-banner.plans {
-    height: 100%;
-    padding: 60px 0px;
-}
-.publish-banner.plans .top-slide-content h1 {
-    padding-bottom: 10px;
-}
-.plan_intro-para {
+         height: 100%;
+         padding: 60px 0px;
+      }
+
+      .publish-banner.plans .top-slide-content h1 {
+         padding-bottom: 10px;
+      }
+
+      .plan_intro-para {
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+      }
+
+      .plan_table-grid {
+         grid-column-gap: 0px;
+         grid-row-gap: 0px;
+         border-top: 0 #ccc;
+         border-bottom: 1px solid #cccccc9c;
+         grid-template-rows: auto;
+         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+         grid-auto-columns: 1fr;
+         display: grid;
+      }
+
+      .plan_table-item {
+         border-right: 1px solid #cccccc9c;
+         padding: 1.5rem 1.5rem;
+         font-size: 1.5rem;
+      }
+
+      .bg_highlight {
+         background-color: #eaa451;
+      }
+
+      .plan_table-grid {
+         background: #ffff;
+      }
+
+      .plan_table-grid.bg_light {
+         background: #efe6d74f;
+      }
+
+      .plan_table-grid.top {
+         position: sticky;
+         top: 0;
+      }
+
+      a.btn_pan {
+         background-color: rgb(36, 36, 36);
+         color: rgb(255, 255, 255);
+         text-transform: uppercase;
+         font-size: 11px;
+         font-weight: 400;
+         padding: 12px 40px;
+         letter-spacing: 1px;
+         position: relative;
+      }
+
+      h2.plan_heading {
+         font-weight: 500;
+         font-size: 35px !important;
+      }
+
+      form.contact-form.plan_form span.checkmark {
+         width: 20px;
+         height: 20px;
+         top: 0;
+      }
+
+      form.contact-form.plan_form .check-container {
+         padding-left: 35px;
+      }
+
+      .from_grp.terms-check-group label {
+         font-size: 18px;
+         font-weight: 600;
+      }
+
+      form.contact-form.plan_form {
+         display: flex;
+         flex-direction: column;
+         gap: 24px;
+      }
+
+      .plan_table-row {
+         grid-column-gap: 0px;
+         grid-row-gap: 0px;
+         border-top: 0 #ccc;
+         grid-template-rows: auto;
+         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+         grid-auto-columns: 1fr;
+         display: grid;
+         gap: 0px;
+      }
+
+      .plan_table-item.flex {
+         display: flex;
+         gap: 0.5rem;
+         background-color: #eaa451;
+         border-top-left-radius: 16px;
+         border-top-right-radius: 16px;
+         min-height: 140px;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin-bottom: 1rem;
+         border: 5px solid #fff;
+         border-radius: 16px;
+      }
+
+      .plan_table-item.bg_highlight {
+         border-top-left-radius: 16px;
+         border-top-right-radius: 16px;
+      }
+
+      .plan_header-price {
+         text-align: center;
+         background: #e8e6b5;
+         padding: 6px 15px;
+         width: fit-content;
+         border-radius: 4px;
+      }
+
+      .plan_header-price h6 {
+         font-size: 16px;
+         color: #d54e4e;
+      }
+
+      .plan_table .container {
+         max-width: 1350px;
+      }
+
+      .plan_table-card h3 {
+         font-size: 30px;
+      }
+
+      .plan_table-item.bg_highlight {
+         min-height: 140px;
+         display: flex;
+         align-items: center;
+         justify-content: left;
+      }
+
+      .plan_table-item.flex {
+         min-height: 140px;
+      }
+
+      .plan_inner_content {
+         background: #faa43230;
+      }
+
+      .plan_card-item-content {
+         min-height: 55px;
+         padding: 0px 1rem;
+         display: flex;
+         align-items: center;
+         border-bottom: 1px solid #00000012;
+         text-align: center;
+         align-items: center;
+         justify-content: center;
+         padding: 0.6rem 0.5rem;
+      }
+
+      .plan_card-item-content:last-child {
+         border: 0;
+      }
+
+      .plan_inner_content p {
+         line-height: 130%;
+      }
+
+      .plan_card-item p {
+         font-size: 14px;
+      }
+
+      .plan_table-item.bg_highlight.is_first {
+         background: #fff;
+         border: 0;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin-bottom: 1rem;
+      }
+
+      .plan_inner_content.bg_highlight {
+         background-color: #eaa451;
+      }
+
+      .plan_inner_content.is_first .plan_card-item-content {
+         align-items: center;
+         justify-content: flex-start;
+      }
+      .plan_inner_content .plan_card-item {
     display: flex
 ;
     flex-direction: column;
-    gap: 20px;
 }
-.plan_table-grid {
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    border-top: 0 #ccc;
-    border-bottom: 1px solid #cccccc9c;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-auto-columns: 1fr;
-    display: grid;
+.plan_wrapper .plan_card-item-content {
+    min-height: auto;
 }
-.plan_table-item {
-   border-right: 1px solid #cccccc9c;
-   padding: 1.5rem 1.5rem;
-    font-size: 1.5rem;
-}
-.bg_highlight{
-   background-color: #eaa451;
-}
-.plan_table-grid {
-    background: #ffff;
-}
-.plan_table-grid.bg_light {
-    background: #efe6d74f;
-}
-.plan_table-grid.top {
-    position: sticky;
-    top: 0;
-}
-a.btn_pan {
-    background-color: rgb(36, 36, 36);
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    font-size: 11px;
-    font-weight: 400;
-    padding: 12px 40px;
-    letter-spacing: 1px;
-    position: relative;
-}
-h2.plan_heading {
-    font-weight: 500;
-    font-size: 35px !important;
-}
-form.contact-form.plan_form span.checkmark {
-    width: 20px;
-    height: 20px;
-    top: 0;
-}
-form.contact-form.plan_form .check-container {
-    padding-left: 35px;
-}
-.from_grp.terms-check-group label {
-    font-size: 18px;
-    font-weight: 600;
-}
-form.contact-form.plan_form{
-   display:flex;
-   flex-direction: column;
-   gap: 24px;
-}
-.plan_table-row {
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    border-top: 0 #ccc;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-auto-columns: 1fr;
-    display: grid;
-    gap: 0px;
-}
-.plan_table-item.flex {
-    display: flex;
-    gap: 0.5rem;
-    background-color: #eaa451;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    min-height: 140px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.plan_wrapper {
+    padding-bottom: 1rem;
     margin-bottom: 1rem;
-    border: 5px solid #fff;
-    border-radius: 16px;
-}
-.plan_table-item.bg_highlight {
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-}
-.plan_header-price {
-   text-align: center;
-    background: #e8e6b5;
-    padding: 6px 15px;
-    width: fit-content;
-    border-radius: 4px;
-}
-.plan_header-price h6 {
-    font-size: 16px;
-    color: #d54e4e;
-}
-.plan_table .container {
-    max-width: 1350px;
-}
-.plan_table-card h3 {
-    font-size: 30px;
-}
-.plan_table-item.bg_highlight {
-    min-height: 140px;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-}
-.plan_table-item.flex{
-   min-height: 140px;
-}
-.plan_inner_content {
-    background: #faa43230;
-}
-.plan_card-item-content {
-   min-height: 55px;
-    padding: 0px 1rem;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #00000012;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-.plan_card-item-content:last-child {
-    border: 0;
-}
-.plan_inner_content p {
-   line-height: 130%;
-}
-.plan_card-item p {
-    font-size: 14px;
-}
-.plan_table-item.bg_highlight.is_first {
-    background: #fff;
-    border: 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-.plan_inner_content.bg_highlight {
-    background-color: #eaa451;
-}
-.plan_inner_content.is_first .plan_card-item-content {
-    align-items: center;
-    justify-content: flex-start;
 }
    </style>
 </head>
@@ -301,7 +344,7 @@ form.contact-form.plan_form{
                               <i class="fa fa-bars" aria-hidden="true"></i>
                            </button>
                         </div>
-                       
+
                      </div>
                   </div>
                   <div class="col-lg-9">
@@ -322,7 +365,8 @@ form.contact-form.plan_form{
                         </div>
                         <ul class="navbar-nav notification login-dropdown">
                            <li class="nav-item dropdown">
-                              <a class="dropdown-toggle jb_company_dd_lang position-relative d-flex align-items-center" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                              <a class="dropdown-toggle jb_company_dd_lang position-relative d-flex align-items-center"
+                                 href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                                  <img src="./images/authors/vickey_uppal.webp" class="profile-im">
                                  <img src="./images/dropdown-arrow.svg" class="arrow-icon">
                               </a>
@@ -337,23 +381,23 @@ form.contact-form.plan_form{
                                  </a>
                                  <a href="my-account.html" class="dropdown-item d-block">
                                     My Shelf
-                                  </a>
-                                  <a href="#" class="dropdown-item d-block">
+                                 </a>
+                                 <a href="#" class="dropdown-item d-block">
                                     My Orders
-                                  </a>
-                                  <a href="faq.html" class="dropdown-item d-block">
+                                 </a>
+                                 <a href="faq.html" class="dropdown-item d-block">
                                     Need Help?
-                                  </a>
-                                  <a href="#" class="dropdown-item d-block">
+                                 </a>
+                                 <a href="#" class="dropdown-item d-block">
                                     change password
-                                  </a>
-                                  <div class="dropdown-footer">
+                                 </a>
+                                 <div class="dropdown-footer">
                                     <a href="#" class="dropdown-item d-block">
                                        Logout
-                                     </a>
-                                  </div>
+                                    </a>
+                                 </div>
                            </li>
-                           </ul>
+                        </ul>
                      </div>
                   </div>
                </div>
@@ -379,7 +423,7 @@ form.contact-form.plan_form{
                      <li class="nav-item float-left">
                         <a href="publishing.html" class="navbar-nav-link">Publishing </a>
                      </li>
-                    
+
                      <li class="nav-item float-left">
                         <a href="about-us.html" class="navbar-nav-link">About Us</a>
                      </li>
@@ -491,37 +535,49 @@ form.contact-form.plan_form{
                                  </h1>
                                  <p class="font-18 mb-3">Self and Guided Publishing</p>
                               </div>
-                             
+
                            </div>
-         
+
                         </div>
                      </div>
                   </div>
-                 
+
                </div>
                <div class="plan_intro section-spacer">
                   <div class="container">
-                        <div class="plan_intro-para">
-                           <p>You can review our publishing plans and choose the plan that best suits your requirements. To get an accurate estimate for existing plans, please provide us with your book details by completing the form here. You can also create your own custom plan here. We only charge for the services you opt for and publishing the book through our print-on-demand self-publishing platform and other international platforms. Inventory management and order fulfilment is our responsibility. In all our guided plans, we do not require the author to purchase a certain minimum number of copies with the first print run. Thereafter, minimum 24 copies is the pre-requisite for B&W paperback books. There is no minimum limit for colored books.</p>
-                           <p>The services mentioned in all the plans are customizable. Depending upon the requirements, we can add or delete a set of services from the plan chosen. Charges mentioned in Bronze and Silver plans are for a book of upto 30000 words or 100 pages. For additional word count, a nominal incremental fee would be added. The charges mentioned below are for B&W books only. For full-color books, charges shall increase depending upon the effort involved.</p>
-                        </div>
+                     <div class="plan_intro-para">
+                        <p>You can review our publishing plans and choose the plan that best suits your requirements. To
+                           get an accurate estimate for existing plans, please provide us with your book details by
+                           completing the form here. You can also create your own custom plan here. We only charge for
+                           the services you opt for and publishing the book through our print-on-demand self-publishing
+                           platform and other international platforms. Inventory management and order fulfilment is our
+                           responsibility. In all our guided plans, we do not require the author to purchase a certain
+                           minimum number of copies with the first print run. Thereafter, minimum 24 copies is the
+                           pre-requisite for B&W paperback books. There is no minimum limit for colored books.</p>
+                        <p>The services mentioned in all the plans are customizable. Depending upon the requirements, we
+                           can add or delete a set of services from the plan chosen. Charges mentioned in Bronze and
+                           Silver plans are for a book of upto 30000 words or 100 pages. For additional word count, a
+                           nominal incremental fee would be added. The charges mentioned below are for B&W books only.
+                           For full-color books, charges shall increase depending upon the effort involved.</p>
+                     </div>
                   </div>
                </div>
                <div class="plan_table section-spacer">
                   <div class="container">
-                        <div class="plan_table-wrapper">
-                           <div class="section-heading mb-4 text-center">
-                              <h2 class="plan_heading">Guided Publishing Plans</h2>
-                              <p>(All prices are in INR inclusive of GST)</p>        
-                           </div>
-                           <div class="plan_table-row">
-                              <div class="plan_table-card">
-                                 <div class="plan_table-item bg_highlight is_first">
-                                    <h3>Service</h3>
-                                    <p>Inclusive of taxes</p>
-                                 </div>
-                                 <div class="plan_inner_content is_first">
-                                    <div class="plan_card-item">
+                     <div class="plan_table-wrapper">
+                        <div class="section-heading mb-4 text-center">
+                           <h2 class="plan_heading">Guided Publishing Plans</h2>
+                           <p>(All prices are in INR inclusive of GST)</p>
+                        </div>
+                        <div class="plan_table-row">
+                           <div class="plan_table-card">
+                              <div class="plan_table-item bg_highlight is_first">
+                                 <h3>Service</h3>
+                                 <p>Inclusive of taxes</p>
+                              </div>
+                              <div class="plan_inner_content is_first">
+                                 <div class="plan_card-item">
+                                    <div class="plan_wrapper">
                                        <div class="plan_card-item-content">
                                           <p>1. ISBN</p>
                                        </div>
@@ -543,6 +599,8 @@ form.contact-form.plan_form{
                                        <div class="plan_card-item-content">
                                           <p>7. Dedicated Publishing Manager</p>
                                        </div>
+                                    </div>
+                                    <div class="plan_wrapper">
                                        <div class="plan_card-item-content">
                                           <p>8. Cover Design</p>
                                        </div>
@@ -552,6 +610,9 @@ form.contact-form.plan_form{
                                        <div class="plan_card-item-content">
                                           <p>10. Book Interior Revision</p>
                                        </div>
+                                    </div>
+
+                                    <div class="plan_wrapper">
                                        <div class="plan_card-item-content">
                                           <p>11. Illustrations</p>
                                        </div>
@@ -570,6 +631,10 @@ form.contact-form.plan_form{
                                        <div class="plan_card-item-content">
                                           <p>16. E-book Creation</p>
                                        </div>
+                                    </div>
+
+
+                                    <div class="plan_wrapper">
                                        <div class="plan_card-item-content">
                                           <p>17. Kindle</p>
                                        </div>
@@ -582,6 +647,10 @@ form.contact-form.plan_form{
                                        <div class="plan_card-item-content">
                                           <p>20. Book Video Trailer</p>
                                        </div>
+                                    </div>
+
+
+                                    <div class="plan_wrapper">
                                        <div class="plan_card-item-content">
                                           <p>21. Facebook Ad Campaign (Meta Ads)</p>
                                        </div>
@@ -591,6 +660,9 @@ form.contact-form.plan_form{
                                        <div class="plan_card-item-content">
                                           <p>23. Blog Article on Website</p>
                                        </div>
+                                    </div>
+
+                                    <div class="plan_wrapper">
                                        <div class="plan_card-item-content">
                                           <p>24. Book Fair Participation</p>
                                        </div>
@@ -600,12 +672,19 @@ form.contact-form.plan_form{
                                        <div class="plan_card-item-content">
                                           <p>26. Book Launch</p>
                                        </div>
+                                    </div>
+
+
+                                    <div class="plan_wrapper">
                                        <div class="plan_card-item-content">
                                           <p>27. Amazon Author Page</p>
                                        </div>
                                        <div class="plan_card-item-content">
                                           <p>28. Online Media Release</p>
                                        </div>
+                                    </div>
+
+                                    <div class="plan_wrapper">
                                        <div class="plan_card-item-content">
                                           <p>29. Offline Press Release</p>
                                        </div>
@@ -621,568 +700,674 @@ form.contact-form.plan_form{
                                        <div class="plan_card-item-content">
                                           <p>33. Bodhagamya Book Awards</p>
                                        </div>
-                                       
                                     </div>
-                                 </div>
-                              </div>
-                              <div class="plan_table-card">
-                                 <div class="plan_table-item flex">
-                                    <h3>Professional</h3>
-                                   <div class="plan_header-price">
-                                    
-                                    <h6>Rs. 19,990</h6>
-                                   </div>
-                                 </div>
-                                 <div class="plan_inner_content bg_highlight">
-                                    <div class="plan_card-item">
-                                       <div class="plan_card-item-content">
-                                          <p>Yes</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Yes</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Yes</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Yes</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Yes</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Yes</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Yes</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>One Free Round</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>10 Author Copies (B/W)</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Yes</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Yes</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Eligible</p>
-                                       </div>
-                                       
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="plan_table-card">
-                                 <div class="plan_table-item flex">
-                                    <h3>Elite</h3>
-                                   <div class="plan_header-price">
-                                    
-                                    <h6>Rs. 54,500</h6>
-                                   </div>
-                                 </div>
-                                 <div class="plan_inner_content">
-                                    <div class="plan_card-item">
-                                       <div class="plan_card-item-content">
-                                          <p>Y</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Y</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Y</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Y</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Y</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Y</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Y</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Y</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>One Free Round</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>15 (B/W or 5 Color)</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Yes</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Yes</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Yes</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>3 Months</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Yes</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Regular</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Eligible</p>
-                                       </div>
-                                       
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="plan_table-card">
-                                 <div class="plan_table-item flex">
-                                    <h3>Ultimate</h3>
-                                   <div class="plan_header-price">
-                                    
-                                    <h6>98,500</h6>
-                                   </div>
-                                 </div>
-                                 <div class="plan_inner_content bg_highlight">
-                                    <div class="plan_card-item">
-                                       <div class="plan_card-item-content">
-                                          <p>Y</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Y</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Y</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Y</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Y</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Y</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Y</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Two Free Rounds</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Free (Up to 30K Words)</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Free (Up to 30K Words)</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>20 (B/W or 5 Color)</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Yes</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Yes</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Yes</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Yes</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>6 Months</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Yes</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>1 Month</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>3 Posts</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Yes</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Yes</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Yes</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>10 News Portals</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>1</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Add-On</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Enhanced</p>
-                                       </div>
-                                       <div class="plan_card-item-content">
-                                          <p>Eligible</p>
-                                       </div>
-                                       
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="plan_table-card">
-                                 <div class="plan_table-item flex">
-                                    <h3>Visionary</h3>
-                                   <div class="plan_header-price">
-                                    
-                                    <h6>Rs. 1,48,500</h6>
-                                   </div>
-                                 </div>
-                                 <div class="plan_inner_content">
-                                 <div class="plan_card-item">
-                                    <div class="plan_card-item-content">
-                                       <p>Y</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>Y</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>Y</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>Y</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>Y</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>Y</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>Y</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>Two Free Rounds</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>Add-On</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>Free (Up to 40K Words)</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>Add-On</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>Free (Up to 40K Words)</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>50 (B/W or 25 Color)</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>Yes</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>Yes</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>Yes</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>Yes</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>12 Months</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>Yes</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>Add-On</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>3 Posts</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>3 Posts</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>Yes</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>Add-On</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>Add-On</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>Ye s</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>Yes</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>20 News Portals</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>2</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>Add-On</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>Add-On</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>Superior</p>
-                                    </div>
-                                    <div class="plan_card-item-content">
-                                       <p>Eligible</p>
-                                    </div>
-                                    
-                                 </div>
+
+
                                  </div>
                               </div>
                            </div>
+                           <div class="plan_table-card">
+                              <div class="plan_table-item flex">
+                                 <h3>Professional</h3>
+                                 <div class="plan_header-price">
+
+                                    <h6>Rs. 19,990</h6>
+                                 </div>
+                              </div>
+                              <div class="plan_inner_content bg_highlight">
+                                 <div class="plan_card-item">
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>1. ISBN</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>2. Copyrights</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>3. Online Sales Dashboard</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>4. Profit Share</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>5. Publishing Support</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>6. Post-Publishing Support</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>7. Dedicated Publishing Manager</p>
+                                       </div>
+                                    </div>
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>8. Cover Design</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>9. Interior Design</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>10. Book Interior Revision</p>
+                                       </div>
+                                    </div>
+
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>11. Illustrations</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>12. Editing</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>13. Author Copies</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>14. Indian Online Distribution</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>15. International Distribution</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>16. E-book Creation</p>
+                                       </div>
+                                    </div>
 
 
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>17. Kindle</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>18. Amazon Prime Listing</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>19. POD</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>20. Book Video Trailer</p>
+                                       </div>
+                                    </div>
 
 
-                        
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>21. Facebook Ad Campaign (Meta Ads)</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>22. Social Media Post</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>23. Blog Article on Website</p>
+                                       </div>
+                                    </div>
+
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>24. Book Fair Participation</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>25. Book Store Listing</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>26. Book Launch</p>
+                                       </div>
+                                    </div>
+
+
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>27. Amazon Author Page</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>28. Online Media Release</p>
+                                       </div>
+                                    </div>
+
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>29. Offline Press Release</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>30. Amazon Pre-Orders</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>31. Amazon Sponsored Ads</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>32. Author Website</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>33. Bodhagamya Book Awards</p>
+                                       </div>
+                                    </div>
+
+
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="plan_table-card">
+                              <div class="plan_table-item flex">
+                                 <h3>Elite</h3>
+                                 <div class="plan_header-price">
+
+                                    <h6>Rs. 54,500</h6>
+                                 </div>
+                              </div>
+                              <div class="plan_inner_content">
+                                 <div class="plan_card-item">
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>1. ISBN</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>2. Copyrights</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>3. Online Sales Dashboard</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>4. Profit Share</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>5. Publishing Support</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>6. Post-Publishing Support</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>7. Dedicated Publishing Manager</p>
+                                       </div>
+                                    </div>
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>8. Cover Design</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>9. Interior Design</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>10. Book Interior Revision</p>
+                                       </div>
+                                    </div>
+
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>11. Illustrations</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>12. Editing</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>13. Author Copies</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>14. Indian Online Distribution</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>15. International Distribution</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>16. E-book Creation</p>
+                                       </div>
+                                    </div>
+
+
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>17. Kindle</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>18. Amazon Prime Listing</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>19. POD</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>20. Book Video Trailer</p>
+                                       </div>
+                                    </div>
+
+
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>21. Facebook Ad Campaign (Meta Ads)</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>22. Social Media Post</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>23. Blog Article on Website</p>
+                                       </div>
+                                    </div>
+
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>24. Book Fair Participation</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>25. Book Store Listing</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>26. Book Launch</p>
+                                       </div>
+                                    </div>
+
+
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>27. Amazon Author Page</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>28. Online Media Release</p>
+                                       </div>
+                                    </div>
+
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>29. Offline Press Release</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>30. Amazon Pre-Orders</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>31. Amazon Sponsored Ads</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>32. Author Website</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>33. Bodhagamya Book Awards</p>
+                                       </div>
+                                    </div>
+
+
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="plan_table-card">
+                              <div class="plan_table-item flex">
+                                 <h3>Ultimate</h3>
+                                 <div class="plan_header-price">
+
+                                    <h6>98,500</h6>
+                                 </div>
+                              </div>
+                              <div class="plan_inner_content bg_highlight">
+                                 <div class="plan_card-item">
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>1. ISBN</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>2. Copyrights</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>3. Online Sales Dashboard</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>4. Profit Share</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>5. Publishing Support</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>6. Post-Publishing Support</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>7. Dedicated Publishing Manager</p>
+                                       </div>
+                                    </div>
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>8. Cover Design</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>9. Interior Design</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>10. Book Interior Revision</p>
+                                       </div>
+                                    </div>
+
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>11. Illustrations</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>12. Editing</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>13. Author Copies</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>14. Indian Online Distribution</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>15. International Distribution</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>16. E-book Creation</p>
+                                       </div>
+                                    </div>
+
+
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>17. Kindle</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>18. Amazon Prime Listing</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>19. POD</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>20. Book Video Trailer</p>
+                                       </div>
+                                    </div>
+
+
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>21. Facebook Ad Campaign (Meta Ads)</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>22. Social Media Post</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>23. Blog Article on Website</p>
+                                       </div>
+                                    </div>
+
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>24. Book Fair Participation</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>25. Book Store Listing</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>26. Book Launch</p>
+                                       </div>
+                                    </div>
+
+
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>27. Amazon Author Page</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>28. Online Media Release</p>
+                                       </div>
+                                    </div>
+
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>29. Offline Press Release</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>30. Amazon Pre-Orders</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>31. Amazon Sponsored Ads</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>32. Author Website</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>33. Bodhagamya Book Awards</p>
+                                       </div>
+                                    </div>
+
+
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="plan_table-card">
+                              <div class="plan_table-item flex">
+                                 <h3>Visionary</h3>
+                                 <div class="plan_header-price">
+
+                                    <h6>Rs. 1,48,500</h6>
+                                 </div>
+                              </div>
+                              <div class="plan_inner_content">
+                                 <div class="plan_card-item">
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>1. ISBN</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>2. Copyrights</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>3. Online Sales Dashboard</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>4. Profit Share</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>5. Publishing Support</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>6. Post-Publishing Support</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>7. Dedicated Publishing Manager</p>
+                                       </div>
+                                    </div>
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>8. Cover Design</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>9. Interior Design</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>10. Book Interior Revision</p>
+                                       </div>
+                                    </div>
+
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>11. Illustrations</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>12. Editing</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>13. Author Copies</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>14. Indian Online Distribution</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>15. International Distribution</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>16. E-book Creation</p>
+                                       </div>
+                                    </div>
+
+
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>17. Kindle</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>18. Amazon Prime Listing</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>19. POD</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>20. Book Video Trailer</p>
+                                       </div>
+                                    </div>
+
+
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>21. Facebook Ad Campaign (Meta Ads)</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>22. Social Media Post</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>23. Blog Article on Website</p>
+                                       </div>
+                                    </div>
+
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>24. Book Fair Participation</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>25. Book Store Listing</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>26. Book Launch</p>
+                                       </div>
+                                    </div>
+
+
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>27. Amazon Author Page</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>28. Online Media Release</p>
+                                       </div>
+                                    </div>
+
+                                    <div class="plan_wrapper">
+                                       <div class="plan_card-item-content">
+                                          <p>29. Offline Press Release</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>30. Amazon Pre-Orders</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>31. Amazon Sponsored Ads</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>32. Author Website</p>
+                                       </div>
+                                       <div class="plan_card-item-content">
+                                          <p>33. Bodhagamya Book Awards</p>
+                                       </div>
+                                    </div>
+
+
+                                 </div>
+                              </div>
+                           </div>
                         </div>
+
+
+
+
+
+                     </div>
                   </div>
                </div>
                <div class="plan_contact section-spacer">
                   <div class="container">
-                        <div class="plan_table-wrapper">
-                           <div class="section-heading mb-4 text-center">
-                              <h2 class="plan_heading">Contact Form for Book Publishing</h2>   
-                           </div>
-                           <form class="contact-form plan_form">
-                              <div class="form_grp">
-                                 <input type="text" placeholder="Your Name">
-                              </div>
-                              <div class="form_grp">
-                                 <input type="email" placeholder="Your Email">
-                              </div>
-                              <div class="form_grp">
-                                 <input type="number" placeholder="Phone Number">
-                              </div>
-                              <div class="form_grp">
-                                 <input type="text" placeholder="Book Title">
-                              </div>
-                              <div class="form_grp">
-                                 <input type="text" placeholder="Number of Words in Manuscript *">
-                              </div>
-                              <div class="from_grp terms-check-group">
-                                 <label>Interested in Plan *</label>
-                                 <div class="check_grp">
-                                    <label class="check-container mb-3">
-                                       
-                                       <p> Bronze</p>
-                                       <input type="checkbox">
-                                       <span class="checkmark mb-0"></span>
-                                     </label>
-                                     <label class="check-container mb-3">
-                                       
-                                       <p> Bronze</p>
-                                       <input type="checkbox">
-                                       <span class="checkmark mb-0"></span>
-                                     </label>
-                                     <label class="check-container mb-3">
-                                       
-                                       <p> Bronze</p>
-                                       <input type="checkbox">
-                                       <span class="checkmark mb-0"></span>
-                                     </label>
-                                     <label class="check-container mb-3">
-                                       
-                                       <p> Bronze</p>
-                                       <input type="checkbox">
-                                       <span class="checkmark mb-0"></span>
-                                     </label>
-                                     <label class="check-container mb-3">
-                                       
-                                       <p> Bronze</p>
-                                       <input type="checkbox">
-                                       <span class="checkmark mb-0"></span>
-                                     </label>
-                                 </div>
-                              </div>
-                              <div class="from_grp terms-check-group">
-                                 <label>Interested in Plan *</label>
-                                 <div class="check_grp">
-                                    <label class="check-container mb-3">
-                                       
-                                       <p> Bronze</p>
-                                       <input type="checkbox">
-                                       <span class="checkmark mb-0"></span>
-                                     </label>
-                                     <label class="check-container mb-3">
-                                       
-                                       <p> Bronze</p>
-                                       <input type="checkbox">
-                                       <span class="checkmark mb-0"></span>
-                                     </label>
-                                     <label class="check-container mb-3">
-                                       
-                                       <p> Bronze</p>
-                                       <input type="checkbox">
-                                       <span class="checkmark mb-0"></span>
-                                     </label>
-                                     <label class="check-container mb-3">
-                                       
-                                       <p> Bronze</p>
-                                       <input type="checkbox">
-                                       <span class="checkmark mb-0"></span>
-                                     </label>
-                                     <label class="check-container mb-3">
-                                       
-                                       <p> Bronze</p>
-                                       <input type="checkbox">
-                                       <span class="checkmark mb-0"></span>
-                                     </label>
-                                 </div>
-                              </div>
-                              <div class="from_grp">
-                                 <button type="submit" id="contact-submitbtn" class="btn-view border-0">Submit</button>
-                              </div>
-                           </form>
+                     <div class="plan_table-wrapper">
+                        <div class="section-heading mb-4 text-center">
+                           <h2 class="plan_heading">Contact Form for Book Publishing</h2>
                         </div>
+                        <form class="contact-form plan_form">
+                           <div class="form_grp">
+                              <input type="text" placeholder="Your Name">
+                           </div>
+                           <div class="form_grp">
+                              <input type="email" placeholder="Your Email">
+                           </div>
+                           <div class="form_grp">
+                              <input type="number" placeholder="Phone Number">
+                           </div>
+                           <div class="form_grp">
+                              <input type="text" placeholder="Book Title">
+                           </div>
+                           <div class="form_grp">
+                              <input type="text" placeholder="Number of Words in Manuscript *">
+                           </div>
+                           <div class="from_grp terms-check-group">
+                              <label>Interested in Plan *</label>
+                              <div class="check_grp">
+                                 <label class="check-container mb-3">
+
+                                    <p> Bronze</p>
+                                    <input type="checkbox">
+                                    <span class="checkmark mb-0"></span>
+                                 </label>
+                                 <label class="check-container mb-3">
+
+                                    <p> Bronze</p>
+                                    <input type="checkbox">
+                                    <span class="checkmark mb-0"></span>
+                                 </label>
+                                 <label class="check-container mb-3">
+
+                                    <p> Bronze</p>
+                                    <input type="checkbox">
+                                    <span class="checkmark mb-0"></span>
+                                 </label>
+                                 <label class="check-container mb-3">
+
+                                    <p> Bronze</p>
+                                    <input type="checkbox">
+                                    <span class="checkmark mb-0"></span>
+                                 </label>
+                                 <label class="check-container mb-3">
+
+                                    <p> Bronze</p>
+                                    <input type="checkbox">
+                                    <span class="checkmark mb-0"></span>
+                                 </label>
+                              </div>
+                           </div>
+                           <div class="from_grp terms-check-group">
+                              <label>Interested in Plan *</label>
+                              <div class="check_grp">
+                                 <label class="check-container mb-3">
+
+                                    <p> Bronze</p>
+                                    <input type="checkbox">
+                                    <span class="checkmark mb-0"></span>
+                                 </label>
+                                 <label class="check-container mb-3">
+
+                                    <p> Bronze</p>
+                                    <input type="checkbox">
+                                    <span class="checkmark mb-0"></span>
+                                 </label>
+                                 <label class="check-container mb-3">
+
+                                    <p> Bronze</p>
+                                    <input type="checkbox">
+                                    <span class="checkmark mb-0"></span>
+                                 </label>
+                                 <label class="check-container mb-3">
+
+                                    <p> Bronze</p>
+                                    <input type="checkbox">
+                                    <span class="checkmark mb-0"></span>
+                                 </label>
+                                 <label class="check-container mb-3">
+
+                                    <p> Bronze</p>
+                                    <input type="checkbox">
+                                    <span class="checkmark mb-0"></span>
+                                 </label>
+                              </div>
+                           </div>
+                           <div class="from_grp">
+                              <button type="submit" id="contact-submitbtn" class="btn-view border-0">Submit</button>
+                           </div>
+                        </form>
+                     </div>
                   </div>
                </div>
             </div>
@@ -1220,8 +1405,8 @@ form.contact-form.plan_form{
                         <div class="col-6 col-md-3">
                            <h5 class="footer-widget-title">Explore</h5>
                            <ul class="mb-0 p-0">
-                            
-                              
+
+
                               <li><a href="book-listing.html">Bookstore </a></li>
                               <li><a href="about-us.html">About us</a></li>
                               <li><a href="contact-us.html">Contact us</a></li>
@@ -1229,7 +1414,7 @@ form.contact-form.plan_form{
                               <li><a href="faq.html">Faq</a></li>
                            </ul>
                         </div>
-                       
+
                         <div class="col-6 col-md-3">
                            <h5 class="footer-widget-title">Categories</h5>
                            <ul class="mb-0 p-0">
@@ -1251,12 +1436,12 @@ form.contact-form.plan_form{
                <div class="footer-copyright">
                   <p class="text-gray">Copyright © 2022 <span class="footer-text">Burgeon House</span>. All rights
                      reserved.</p>
-                <div class="static-list">
-                  <ul class="mb-0 p-0 d-flex">
-                     <li><a href="terms-of-use.html">Terms of use</a></li>
-                     <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                  </ul>
-                </div>
+                  <div class="static-list">
+                     <ul class="mb-0 p-0 d-flex">
+                        <li><a href="terms-of-use.html">Terms of use</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                     </ul>
+                  </div>
                </div>
             </div>
          </div>
@@ -1264,10 +1449,10 @@ form.contact-form.plan_form{
    </div>
 
 
-  <!-- <a id="button" class="d-flex align-items-center justify-content-center vert-move"></a> -->
+   <!-- <a id="button" class="d-flex align-items-center justify-content-center vert-move"></a> -->
    <!-- footer section -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/utils.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/utils.min.js"></script>
 
    <script type="text/javascript" src="js/jquery.min.js"></script>
    <!-- <script type="text/javascript" src="js/cursor.js"></script> -->
